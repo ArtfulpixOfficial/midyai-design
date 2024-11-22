@@ -114,7 +114,9 @@ const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
                           </div>
                         </div>
                         {innerData.isSelect && isBadge ? (
-                          <div className="feature-badge">Most Popular</div>
+                          <div className="feature-badge text-center">
+                            Most Popular
+                          </div>
                         ) : (
                           ""
                         )}

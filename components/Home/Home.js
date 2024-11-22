@@ -7,8 +7,8 @@ import Sal from "sal.js";
 
 import PricingData from "../../data/pricing.json";
 
-import SplitImg from "../../public/images/split/split-2.png";
-import SplitLogo from "../../public/images/split/split-2-logo.png";
+import SplitImg from "../../public/images/split/split-6.png";
+import SplitLogo from "../../public/images/split/logo.png";
 import bannerImg from "../../public/images/bg/slider-main-image.png";
 import shapeOne from "../../public/images/bg/icon-shape/icon-shape-one.png";
 import shapeTwo from "../../public/images/bg/icon-shape/icon-shape-two.png";
@@ -378,11 +378,11 @@ const Home = () => {
                   alt="collabration-image"
                 />
                 <div className="logo-section">
-                  <div className="center-logo">
+                  <div className="center-logo p-0">
                     <Image
                       src={SplitLogo}
-                      width={104}
-                      height={143}
+                      width={200}
+                      height={200}
                       alt="Small Logo"
                     />
                   </div>
@@ -417,7 +417,7 @@ const Home = () => {
                 </h2>
               </div>
 
-              {/* <nav className="aiwave-tab">
+              <nav className="aiwave-tab">
                 <div
                   className="tab-btn-grp nav nav-tabs text-center justify-content-center"
                   id="nav-tab"
@@ -447,7 +447,7 @@ const Home = () => {
                       </button>
                     ))}
                 </div>
-              </nav> */}
+              </nav>
             </div>
           </div>
 
@@ -533,11 +533,11 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="rainbow-cta-area rainbow-section-gap rainbow-section-gapBottom-big">
+      {/* <div className="rainbow-cta-area rainbow-section-gap rainbow-section-gapBottom-big">
         <div className="container">
           <CtaTwo />
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

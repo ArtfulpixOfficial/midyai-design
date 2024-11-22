@@ -16,17 +16,17 @@ const Footer = () => {
             <div className="row justify-content-between">
               <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                 <div className="rainbow-footer-widget">
-                  <div className="logo">
-                    <Link href="/">
-                      <Image
-                        className="logo-light"
-                        src={logo}
-                        width={135}
-                        height={35}
-                        alt="ChatBot Logo"
-                      />
-                    </Link>
-                  </div>
+                  {/* <div className="logo"> */}
+                  <Link href="/">
+                    <Image
+                      className="logo-light"
+                      src={logo}
+                      width={95}
+                      height={95}
+                      alt="ChatBot Logo"
+                    />
+                  </Link>
+                  {/* </div> */}
                   <p className="b1 desc-text">
                     We love that you're exploring new horizons with our services
                   </p>

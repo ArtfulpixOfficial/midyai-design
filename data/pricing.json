@@ -2,7 +2,7 @@
   "pricing": [
     {
       "priceId": "nav-home",
-      "priceType": "Monthly",
+      "priceType": "Individuals",
       "discount": "",
       "isSelect": true,
       "priceBody": [
@@ -160,38 +160,59 @@
     },
     {
       "priceId": "nav-profile",
-      "priceType": "Yearly",
-      "discount": 10,
+      "priceType": "Teams",
+      "discount": "",
       "isSelect": false,
       "priceBody": [
         {
           "id": 1,
           "priceId": "nav-profile",
           "isSelect": false,
-          "isShow": false,
+          "isShow": true,
           "classNum": "one",
-          "subTitle": "Basic",
-          "title": "For large teams & corportaions",
-          "price": "Free",
-          "priceFor": "/Per Year",
+          "subTitle": "Premium Plan",
+          "title": "Intended for groups of up to 5 colleagues in an office or small team, sharing advanced tools for graphic content creation.",
+          "price": "$12.99",
+          "priceFor": "/Per Month",
           "limited": "Limited Offer",
           "text": "Features",
           "iconClass": "fa-regular fa-circle-radiation",
           "listItem": [
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "Chat Assistants - 70,000 Characters"
             },
             {
-              "text": "6+ Naive development"
+              "text": "SDXL Image Generator - 100 Images"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Remove Background - 100 Images"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "Replace Background - 100 Images"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "Text-To-Speech - 50,000 Characters"
+            },
+            {
+              "text": "Graphic Editor - Unlimited"
+            },
+            {
+              "text": "Clean Up - 50 Images"
+            },
+            {
+              "text": "Components Library - Unlimited"
+            },
+            {
+              "text": "QR Code Generator - Unlimited"
+            },
+            {
+              "text": "Search Image Engine - Unlimited"
+            },
+            {
+              "text": "Speech-To-Text - 5 Hours"
+            },
+            {
+              "text": "Upscaler - 30 Images"
             }
           ]
         },
@@ -201,37 +222,49 @@
           "isSelect": true,
           "isShow": true,
           "classNum": "two",
-          "subTitle": "Premium",
-          "title": "For large teams & corportaions",
-          "price": "$499.00",
-          "priceFor": "/Per Year",
+          "subTitle": "Deluxe Plan",
+          "title": "Geared towards teams of up to 7 individuals needing premium features and prioritized support for complex graphic projects.",
+          "price": "$15.99",
+          "priceFor": "/Per Month",
           "limited": "Limited Offer",
           "text": "Features",
           "iconClass": "fa-sharp fa-regular fa-flower",
           "listItem": [
             {
-              "text": "12,700 7-9 day turnarouord"
+              "text": "Chat Assistants - 100,000 Characters"
             },
             {
-              "text": "6+ Naive development"
+              "text": "SDXL Image Generator - 150 Images"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Remove Background - 150 Images"
             },
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "Replace Background - 150 Images"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Text-To-Speech - 70,000 Characters"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Graphic Editor - Unlimited"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "Clean Up - 70 Images"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "Components Library - Unlimited"
+            },
+            {
+              "text": "QR Code Generator - Unlimited"
+            },
+            {
+              "text": "Search Image Engine - Unlimited"
+            },
+            {
+              "text": "Speech-To-Text - 7 Hours"
+            },
+            {
+              "text": "Upscaler - 50 Images"
             }
           ]
         },
@@ -241,37 +274,49 @@
           "isSelect": false,
           "isShow": true,
           "classNum": "three",
-          "subTitle": "Enterprise",
-          "title": "For large teams & corportaions",
-          "price": "$599.00",
-          "priceFor": "/Per Year",
+          "subTitle": "Ultimate Plan",
+          "title": "The most comprehensive plan, ideal for larger teams of up to 10 people requiring advanced integrations and personalized support to optimize graphic content creation with AI.",
+          "price": "$20.99",
+          "priceFor": "/Per Month",
           "limited": "Limited Offer",
           "text": "Features",
           "iconClass": "fa-sharp fa-regular fa-waveform-lines",
           "listItem": [
             {
-              "text": "12,700 7-9 day turnarouord"
+              "text": "Chat Assistants - 150,000 Characters"
             },
             {
-              "text": "6+ Naive development"
+              "text": "SDXL Image Generator - 200 Images"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Remove Background - Unlimited"
             },
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "Replace Background - 200 Images"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Text-To-Speech - 200,000 Characters"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Graphic Editor - Unlimited"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "Clean Up - 100 Images"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "Components Library - Unlimited"
+            },
+            {
+              "text": "QR Code Generator - Unlimited"
+            },
+            {
+              "text": "Search Image Engine - Unlimited"
+            },
+            {
+              "text": "Speech-To-Text - 10 Hours"
+            },
+            {
+              "text": "Upscaler - 70 Images"
             }
           ]
         }

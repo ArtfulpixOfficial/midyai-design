@@ -32,7 +32,7 @@ const PricingPage = () => {
     <>
       <main className="page-wrapper">
         <Context>
-          <HeaderTop />
+          {/* <HeaderTop /> */}
           <Header
             headerTransparent="header-transparent"
             headerSticky="header-sticky"
@@ -64,7 +64,7 @@ const PricingPage = () => {
                           resonates.
                         </p>
                       </div>
-                      {/* <nav className="aiwave-tab">
+                      <nav className="aiwave-tab">
                         <div
                           className="tab-btn-grp nav nav-tabs mb-3 text-center justify-content-center"
                           id="nav-tab"
@@ -96,7 +96,7 @@ const PricingPage = () => {
                               </button>
                             ))}
                         </div>
-                      </nav> */}
+                      </nav>
                     </div>
                   </div>
 
