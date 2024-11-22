@@ -1,33 +1,78 @@
 {
   "serviceOne": [
     {
-      "img": "/images/icons/service-icon-01.svg",
-      "title": "Ask anything",
+      "img": "/images/icons/Midy.jpg",
+      "title": "Midy",
       "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
     },
     {
-      "img": "/images/icons/service-icon-02.svg",
-      "title": "Connect everywhere",
+      "img": "/images/icons/Grace.jpg",
+      "title": "Grace",
       "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
     },
     {
-      "img": "/images/icons/service-icon-03.svg",
-      "title": "Fast responding",
+      "img": "/images/icons/Emma.jpg",
+      "title": "Emma",
       "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
     },
     {
-      "img": "/images/icons/service-icon-01.svg",
-      "title": "Ask anything",
+      "img": "/images/icons/Lucas.jpg",
+      "title": "Lucas",
       "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
     },
     {
-      "img": "/images/icons/service-icon-02.svg",
-      "title": "Connect everywhere",
+      "img": "/images/icons/Eleanor.jpg",
+      "title": "Eleanor",
       "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
     },
     {
-      "img": "/images/icons/service-icon-03.svg",
-      "title": "Fast responding",
+      "img": "/images/icons/Benjamin.jpg",
+      "title": "Benjamin",
+      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+    },
+    {
+      "img": "/images/icons/Ethan.jpg",
+      "title": "Ethan",
+      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+    },
+    {
+      "img": "/images/icons/Matthew.jpg",
+      "title": "Matthew",
+      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+    },
+    {
+      "img": "/images/icons/William.jpg",
+      "title": "William",
+      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+    },
+    {
+      "img": "/images/icons/Charlotte.jpg",
+      "title": "Charlotte",
+      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+    },
+    {
+      "img": "/images/icons/Dwayne.jpg",
+      "title": "Dwayne",
+      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+    },
+    {
+      "img": "/images/icons/Owen.jpg",
+      "title": "Owen",
+      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+    },
+    {
+      "img": "/images/icons/James.jpg",
+      "title": "James",
+      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+    },
+    {
+      "img": "/images/icons/Naomi.jpg",
+      "title": "Naomi",
+      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+    },
+    {
+      "img": "/images/icons/Madison.jpg",
+      "title": "Madison",
       "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
     }
   ],

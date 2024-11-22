@@ -10,7 +10,7 @@ const NavProps = ({ list }) => {
 
   return (
     <>
-      <div className="col-lg-4 single-mega-item">
+      <div className="col single-mega-item">
         <ul className="mega-menu-item">
           {list &&
             list.map((item, i) => (

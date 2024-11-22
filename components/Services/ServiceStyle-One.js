@@ -14,7 +14,7 @@ const ServiceStyleOne = () => {
   var settings = {
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     dots: true,
     arrows: true,
     cssEase: "linear",
@@ -64,12 +64,20 @@ const ServiceStyleOne = () => {
                     <div className="rainbow-box-card card-style-default aiwave-service-default has-bg-shaped">
                       <div className="inner">
                         <div className="icon">
-                          <Image
-                            src={data.img}
-                            width={48}
-                            height={48}
-                            alt="Servece Icon"
-                          />
+                          <div
+                            className="col-2"
+                            style={{ borderRadius: "65px", overflow: "hidden" }}
+                          >
+                            <Image
+                              src={data.img}
+                              width={60}
+                              height={60}
+                              style={{
+                                objectFit: "cover",
+                              }}
+                              alt="Servece Icon"
+                            />
+                          </div>
                         </div>
                         <div className="description centered-shape">
                           <h5 className="title">{data.title}</h5>

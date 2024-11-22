@@ -108,7 +108,7 @@ const Nav = () => {
                       <NavProps list={data.inner} />
                       <NavProps list={data.dashboard} />
                       {/* <NavProps list={data.upcoming} /> */}
-                      <div className="col-lg-4 single-mega-item">
+                      {/* <div className="col-lg-4 single-mega-item">
                         <div className="header-menu-img">
                           <Image
                             src={menuImg}
@@ -117,7 +117,7 @@ const Nav = () => {
                             alt="Menu Split Image"
                           />
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
