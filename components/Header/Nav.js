@@ -107,8 +107,8 @@ const Nav = () => {
                     <div className="row row--0">
                       <NavProps list={data.inner} />
                       <NavProps list={data.dashboard} />
-                      <NavProps list={data.upcoming} />
-                      <div className="col-lg-3 single-mega-item">
+                      {/* <NavProps list={data.upcoming} /> */}
+                      <div className="col-lg-4 single-mega-item">
                         <div className="header-menu-img">
                           <Image
                             src={menuImg}

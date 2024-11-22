@@ -15,7 +15,6 @@ const AppearancePage = () => {
             <HeaderDashboard display="d-none" />
             <PopupMobileMenu />
             <LeftDashboardSidebar />
-
             <Appearance />
           </div>
         </Context>

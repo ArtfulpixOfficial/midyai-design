@@ -26,7 +26,7 @@ const HeaderDashboard = ({ display }) => {
           <div className="row align-items-center justify-content-between">
             <div className="col-lg-3 col-md-6 col-6">
               <div className="header-left d-flex">
-                <div className="expand-btn-grp">
+                {/* <div className="expand-btn-grp">
                   <button
                     className={`bg-solid-primary popup-dashboardleft-btn ${
                       mobile ? "" : "collapsed"
@@ -35,18 +35,18 @@ const HeaderDashboard = ({ display }) => {
                   >
                     <i className="fa-sharp fa-regular fa-sidebar"></i>
                   </button>
-                </div>
-                <div className="logo">
-                  <Link href="/">
-                    <Image
-                      className="logo-light"
-                      src={logo}
-                      width={135}
-                      height={35}
-                      alt="Corporate Logo"
-                    />
-                  </Link>
-                </div>
+                </div> */}
+                {/* <div className="logo"> */}
+                <Link href="/">
+                  <Image
+                    className="logo-light"
+                    src={logo}
+                    width={95}
+                    height={95}
+                    alt="Corporate Logo"
+                  />
+                </Link>
+                {/* </div> */}
               </div>
             </div>
 

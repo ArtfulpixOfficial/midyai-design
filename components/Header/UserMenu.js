@@ -25,12 +25,12 @@ const UserMenu = () => {
         <UserMenuItems parentClass="user-list-wrapper user-nav" />
         <hr className="mt--10 mb--10" />
         <ul className="user-list-wrapper user-nav">
-          <li>
+          {/* <li>
             <Link href="/privacy-policy">
               <i className="fa-solid fa-comments-question"></i>
               <span>Help Center</span>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/profile-details">
               <i className="fa-sharp fa-solid fa-gears"></i>

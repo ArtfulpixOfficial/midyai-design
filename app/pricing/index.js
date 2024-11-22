@@ -64,7 +64,7 @@ const PricingPage = () => {
                           resonates.
                         </p>
                       </div>
-                      <nav className="aiwave-tab">
+                      {/* <nav className="aiwave-tab">
                         <div
                           className="tab-btn-grp nav nav-tabs mb-3 text-center justify-content-center"
                           id="nav-tab"
@@ -96,7 +96,7 @@ const PricingPage = () => {
                               </button>
                             ))}
                         </div>
-                      </nav>
+                      </nav> */}
                     </div>
                   </div>
 
@@ -152,7 +152,7 @@ const PricingPage = () => {
               </div>
             </div>
 
-            <div className="rainbow-pricing-detailed-area rainbow-section-gap">
+            {/* <div className="rainbow-pricing-detailed-area rainbow-section-gap">
               <div className="container">
                 <Compare
                   titleType={true}
@@ -161,13 +161,13 @@ const PricingPage = () => {
                   subTitle="Price Compare"
                 />
               </div>
-            </div>
+            </div> */}
 
-            <div className="rainbow-testimonial-area rainbow-section-gap">
+            {/* <div className="rainbow-testimonial-area rainbow-section-gap">
               <div className="container">
                 <TestimonialTwo />
               </div>
-            </div>
+            </div> */}
 
             <div className="rainbow-accordion-area rainbow-section-gap">
               <div className="container">
@@ -214,11 +214,11 @@ const PricingPage = () => {
               </div>
             </div>
 
-            <div className="rainbow-cta-area rainbow-section-gap rainbow-section-gapBottom-big">
+            {/* <div className="rainbow-cta-area rainbow-section-gap rainbow-section-gapBottom-big">
               <div className="container">
                 <CtaTwo />
               </div>
-            </div>
+            </div> */}
           </div>
 
           <BackToTop />

@@ -3,27 +3,27 @@
     {
       "links": [
         {
-          "title": "Qucik Links",
+          "title": "Social Media",
           "innerItem": [
             {
               "link": "#",
-              "text": "Pages"
+              "text": "Facebook"
             },
             {
               "link": "/blog",
-              "text": "Blog"
+              "text": "Twitter"
             },
             {
               "link": "/contact",
-              "text": "Contact"
+              "text": "Instagram"
             },
             {
               "link": "/utilize",
-              "text": "How to use"
+              "text": "YouTube"
             },
             {
               "link": "/roadmap",
-              "text": "Roadmap"
+              "text": "TikTok"
             }
           ]
         }
@@ -38,19 +38,19 @@
             },
             {
               "link": "/vedio-generator",
-              "text": "Video Generator"
+              "text": "Remove Background"
             },
             {
               "link": "/text-generator",
-              "text": "Text Generator"
+              "text": "Replace Background"
             },
             {
               "link": "/code-generator",
-              "text": "Code Generator"
+              "text": "Text-To-Speech"
             },
             {
               "link": "#",
-              "text": "Education Feedback"
+              "text": "Speech-To-Text"
             }
           ]
         }

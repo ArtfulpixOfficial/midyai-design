@@ -14,7 +14,7 @@ const ProfileDetailsPage = () => {
           <div className="rbt-panel-wrapper">
             <HeaderDashboard display="d-none" />
             <PopupMobileMenu />
-            <LeftDashboardSidebar />
+            {/* <LeftDashboardSidebar /> */}
 
             <ProfileDetails />
           </div>

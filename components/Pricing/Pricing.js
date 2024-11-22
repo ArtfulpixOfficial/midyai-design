@@ -108,13 +108,13 @@ const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
                               }`}
                               href="#"
                             >
-                              Get Started
+                              Buy Plan
                             </a>
-                            <p className="bottom-text">{innerData.limited}</p>
+                            {/* <p className="bottom-text">{innerData.limited}</p> */}
                           </div>
                         </div>
                         {innerData.isSelect && isBadge ? (
-                          <div className="feature-badge">Best Offer</div>
+                          <div className="feature-badge">Most Popular</div>
                         ) : (
                           ""
                         )}

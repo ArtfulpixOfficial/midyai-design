@@ -15,7 +15,7 @@ const Contact = () => {
                   <h3 className="title">Get Started with a free quotation</h3>
 
                   <div className="profile-details-tab">
-                    <div className="advance-tab-button">
+                    {/* <div className="advance-tab-button">
                       <ul
                         className="nav nav-tabs tab-button-style-2 justify-content-start"
                         id="settinsTab-4"
@@ -82,9 +82,10 @@ const Contact = () => {
                           </a>
                         </li>
                       </ul>
-                    </div>
+                    </div> */}
 
-                    <div className="tab-content">
+                    <ContactForm />
+                    {/* <div className="tab-content">
                       <div
                         className="tab-pane fade active show"
                         id="image-genarator"
@@ -117,12 +118,12 @@ const Contact = () => {
                       >
                         <ContactForm />
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
               <div className="col-lg-4 mt_md--30 mt_sm--30">
-                <div className="rainbow-address">
+                {/* <div className="rainbow-address">
                   <div className="icon">
                     <i className="fa-sharp fa-regular fa-location-dot"></i>
                   </div>
@@ -132,8 +133,8 @@ const Contact = () => {
                       100 avenue of the moon, 12 new <br /> York, ny 1001B US.
                     </p>
                   </div>
-                </div>
-                <div className="rainbow-address">
+                </div> */}
+                {/* <div className="rainbow-address">
                   <div className="icon">
                     <i className="fa-sharp fa-solid fa-headphones"></i>
                   </div>
@@ -146,7 +147,7 @@ const Contact = () => {
                       <Link href="#">+222 222 222 333</Link>
                     </p>
                   </div>
-                </div>
+                </div> */}
                 <div className="rainbow-address">
                   <div className="icon">
                     <i className="fa-sharp fa-regular fa-envelope"></i>

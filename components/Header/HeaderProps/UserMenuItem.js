@@ -19,7 +19,7 @@ const UserMenuItems = ({ parentClass }) => {
             <span>Profile Details</span>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             className={isActive("/notification") ? "active" : ""}
             href="/notification"
@@ -45,7 +45,7 @@ const UserMenuItems = ({ parentClass }) => {
             <i className="fa-sharp fa-regular fa-home"></i>
             <span>Apperance</span>
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             className={isActive("/plans-billing") ? "active" : ""}
@@ -55,7 +55,7 @@ const UserMenuItems = ({ parentClass }) => {
             <span>Plans and Billing</span>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             className={isActive("/sessions") ? "active" : ""}
             href="/sessions"
@@ -72,7 +72,7 @@ const UserMenuItems = ({ parentClass }) => {
             <i className="fa-sharp fa-regular fa-list"></i>
             <span>Application</span>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </>
   );

@@ -46,17 +46,17 @@ const Header = ({ headerTransparent, headerSticky, btnClass }) => {
         <div className="container position-relative">
           <div className="row align-items-center row--0">
             <div className="col-lg-2 col-md-6 col-6">
-              <div className="logo">
-                <Link href="/home">
-                  <Image
-                    className="logo-light"
-                    src={logo}
-                    width={135}
-                    height={35}
-                    alt="ChatBot Logo"
-                  />
-                </Link>
-              </div>
+              {/* <div className="logo"> */}
+              <Link href="/home">
+                <Image
+                  className="logo-light"
+                  src={logo}
+                  width={95}
+                  height={95}
+                  alt="ChatBot Logo"
+                />
+              </Link>
+              {/* </div> */}
             </div>
 
             <div className="col-lg-8 d-none d-lg-block">

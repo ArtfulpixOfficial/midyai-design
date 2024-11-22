@@ -32,9 +32,9 @@ const ContactPage = () => {
           <Contact />
 
           <div className="rainbow-cta-area rainbow-section-gap rainbow-section-gapBottom-big">
-            <div className="container">
+            {/* <div className="container">
               <CtaTwo />
-            </div>
+            </div> */}
           </div>
 
           <BackToTop />

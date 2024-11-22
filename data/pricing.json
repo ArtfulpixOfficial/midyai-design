@@ -4,36 +4,51 @@
       "priceId": "nav-home",
       "priceType": "Monthly",
       "discount": "",
-      "isSelect": false,
+      "isSelect": true,
       "priceBody": [
         {
           "id": 1,
           "priceId": "nav-home",
           "isSelect": false,
-          "isShow": false,
+          "isShow": true,
           "classNum": "one",
-          "subTitle": "Basic",
-          "title": "For large teams & corportaions",
-          "price": "Free",
+          "subTitle": "Free Plan",
+          "title": "Start with this plan to find out how some of our tools works.",
+          "price": "$0.00",
           "priceFor": "/Per Month",
           "limited": "Limited Offer",
           "text": "Features",
           "iconClass": "fa-regular fa-circle-radiation",
           "listItem": [
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "Chat Assistants - 15,000 Characters"
             },
             {
-              "text": "6+ Naive development"
+              "text": "SDXL Image Generator - 10 Images"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Remove Background - 10 Images"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "Replace Background - 10 Images"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "Text-To-Speech - 3,000 Characters"
+            },
+            {
+              "text": "Graphic Editor - Unlimited"
+            },
+            {
+              "text": "Clean Up - 3 Images"
+            },
+            {
+              "text": "Components Library - Unlimited"
+            },
+            {
+              "text": "QR Code Generator - Unlimited"
+            },
+            {
+              "text": "Search Image Engine - Unlimited"
             }
           ]
         },
@@ -43,37 +58,49 @@
           "isSelect": true,
           "isShow": true,
           "classNum": "two",
-          "subTitle": "Premium",
-          "title": "For large teams & corportaions",
-          "price": "$60.50",
+          "subTitle": "Basic Plan",
+          "title": "Tailored for individuals who are new to experimenting with AI tools for basic graphic content creation.",
+          "price": "$5.99",
           "priceFor": "/Per Month",
           "limited": "Limited Offer",
           "text": "Features",
           "iconClass": "fa-sharp fa-regular fa-flower",
           "listItem": [
             {
-              "text": "12,700 7-9 day turnarouord"
+              "text": "Chat Assistants - 35,000 Characters"
             },
             {
-              "text": "6+ Naive development"
+              "text": "SDXL Image Generator - 50 Images"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Remove Background - 50 Images"
             },
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "Replace Background - 50 Images"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Text-To-Speech - 10,000 Characters"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Graphic Editor - Unlimited"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "Clean Up - 20 Images"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "Components Library - Unlimited"
+            },
+            {
+              "text": "QR Code Generator - Unlimited"
+            },
+            {
+              "text": "Search Image Engine - Unlimited"
+            },
+            {
+              "text": "Speech-To-Text - 1 Hour"
+            },
+            {
+              "text": "Upscaler - 10 Images"
             }
           ]
         },
@@ -83,37 +110,49 @@
           "isSelect": false,
           "isShow": true,
           "classNum": "three",
-          "subTitle": "Enterprise",
-          "title": "For large teams & corportaions",
-          "price": "$80.50",
+          "subTitle": "Standard Plan",
+          "title": "Designed for individuals regularly creating graphic content for their social media channels, utilizing advanced AI tools.",
+          "price": "$8.99",
           "priceFor": "/Per Month",
           "limited": "Limited Offer",
           "text": "Features",
           "iconClass": "fa-sharp fa-regular fa-waveform-lines",
           "listItem": [
             {
-              "text": "12,700 7-9 day turnarouord"
+              "text": "Chat Assistants - 50,000 Characters"
             },
             {
-              "text": "6+ Naive development"
+              "text": "SDXL Image Generator - 70 Images"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Remove Background - 70 Images"
             },
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "Replace Background - 70 Images"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Text-To-Speech - 30,000 Characters"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Graphic Editor - Unlimited"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "Clean Up - 30 Images"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "Components Library - Unlimited"
+            },
+            {
+              "text": "QR Code Generator - Unlimited"
+            },
+            {
+              "text": "Search Image Engine - Unlimited"
+            },
+            {
+              "text": "Speech-To-Text - 2 Hours"
+            },
+            {
+              "text": "Upscaler - 20 Images"
             }
           ]
         }
@@ -123,7 +162,7 @@
       "priceId": "nav-profile",
       "priceType": "Yearly",
       "discount": 10,
-      "isSelect": true,
+      "isSelect": false,
       "priceBody": [
         {
           "id": 1,

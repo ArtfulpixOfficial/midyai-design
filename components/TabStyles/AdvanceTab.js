@@ -96,7 +96,7 @@ const AdvanceTab = () => {
             >
               {AdvanceTabData &&
                 AdvanceTabData.advanceTab.map((list, i) => (
-                  <li className="col-lg-3 nav-item" role="presentation" key={i}>
+                  <li className="col-lg-4 nav-item" role="presentation" key={i}>
                     <a
                       href="#"
                       className={`nav-link tab-button ${

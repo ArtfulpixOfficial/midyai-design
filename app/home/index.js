@@ -15,7 +15,7 @@ const HomePage = () => {
     <>
       <main className="page-wrapper">
         <Context>
-          <HeaderTop />
+          {/* <HeaderTop /> */}
           <Header
             headerTransparent="header-transparent"
             headerSticky="header-sticky"
@@ -25,7 +25,7 @@ const HomePage = () => {
 
           <Home />
           <Footer />
-          <Copyright />
+          {/* <Copyright /> */}
         </Context>
       </main>
     </>

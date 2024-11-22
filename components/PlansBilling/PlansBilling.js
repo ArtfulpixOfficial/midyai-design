@@ -8,14 +8,14 @@ import AccordionItem from "../Accordion/AccordionItem";
 const PlansBilling = () => {
   return (
     <>
-      <div className="rbt-main-content mb-0">
+      <div className="rbt-main-content mb-0 w-75">
         <div className="rbt-daynamic-page-content center-width">
           <div className="rbt-dashboard-content">
             <UserNav title="Plans & Billing" />
             <div className="content-page pb--50">
               <div className="aiwave-pricing-area wrapper">
                 <div className="container">
-                  <div className="row">
+                  {/* <div className="row">
                     <div className="col-lg-12">
                       <nav className="aiwave-tab">
                         <div
@@ -51,21 +51,22 @@ const PlansBilling = () => {
                         </div>
                       </nav>
                     </div>
-                  </div>
+                  </div> */}
 
                   <Pricing
-                    parentClass="col-lg-6 col-md-6 col-12"
-                    start={1}
+                    parentClass="col-xl-4 col-lg-6 col-md-6 col-12 mt--40"
+                    start={0}
                     end={3}
                     isHeading={false}
-                    isBadge={false}
+                    isBadge={true}
+                    gap="mt_dec--40"
                   />
                 </div>
               </div>
             </div>
             <div className="rbt-sm-separator"></div>
 
-            <Compare subTitle="" title="Detailed Compare" postion="left" />
+            {/* <Compare subTitle="" title="Detailed Compare" postion="left" /> */}
 
             <div className="row rainbow-section-gap row--20">
               <div className="col-lg-12">

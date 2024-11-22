@@ -28,8 +28,7 @@ const Footer = () => {
                     </Link>
                   </div>
                   <p className="b1 desc-text">
-                    It has long been known that a reader's <br /> attention will
-                    be diverted from{" "}
+                    We love that you're exploring new horizons with our services
                   </p>
                   <h6 className="subtitle">Join a Newsletter</h6>
                   <form className="newsletter-form" action="#">
@@ -73,18 +72,18 @@ const Footer = () => {
                         {data.contact.map((inner, i) => (
                           <div className="inner" key={i}>
                             <ul className="footer-link contact-link">
-                              <li>
+                              {/* <li>
                                 <i className="contact-icon fa-regular fa-location-dot"></i>
                                 <Link href="#">{inner.location}</Link>
-                              </li>
+                              </li> */}
                               <li>
                                 <i className="contact-icon fa-sharp fa-regular fa-envelope"></i>
                                 <Link href="#">{inner.mail}</Link>
                               </li>
-                              <li>
+                              {/* <li>
                                 <i className="contact-icon fa-regular fa-phone"></i>
                                 <Link href="#">+{inner.number}</Link>
-                              </li>
+                              </li> */}
                             </ul>
                           </div>
                         ))}

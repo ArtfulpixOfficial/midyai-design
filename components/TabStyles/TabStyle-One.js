@@ -36,10 +36,11 @@ const TabStyleOne = () => {
                           width={24}
                           height={24}
                           alt="Vedio Generator Icon"
+                          // fill={true}
                         />
                         {data.text}
                       </span>
-                      <span className="border-bottom-style"></span>
+                      {/* <span className="border-bottom-style"></span> */}
                     </button>
                   </li>
                 ))}

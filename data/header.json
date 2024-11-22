@@ -5,24 +5,8 @@
       "text": "Profile"
     },
     {
-      "link": "/notification",
-      "text": "Notification"
-    },
-    {
-      "link": "/chat-export",
-      "text": "Chat Export"
-    },
-    {
-      "link": "/appearance",
-      "text": "Appearance"
-    },
-    {
       "link": "/plans-billing",
       "text": "Plans and Billing"
-    },
-    {
-      "link": "/sessions",
-      "text": "Sessions"
     }
   ],
   "nav": [
@@ -42,56 +26,74 @@
         {
           "link": "/text-generator",
           "isDisable": false,
-          "title": "Text Generator",
+          "title": "Image Generator",
           "badge": ""
         },
         {
           "link": "/image-generator",
           "isDisable": false,
-          "title": "Image Generator",
+          "title": "Chat Assistants",
           "badge": ""
         },
         {
           "link": "/code-generator",
           "isDisable": false,
-          "title": "Code Generator",
+          "title": "Replace background",
           "badge": ""
         },
         {
           "link": "/image-editor",
           "isDisable": false,
-          "title": "Image Editor",
+          "title": "Remove background",
           "badge": ""
         },
         {
           "link": "/vedio-generator",
           "isDisable": false,
-          "title": "Video Generator",
+          "title": "Text to speech",
           "badge": ""
         },
         {
           "link": "/email-generator",
           "isDisable": false,
-          "title": "Email generator",
+          "title": "Speech to text",
           "badge": ""
         },
         {
           "link": "#",
-          "isDisable": true,
-          "title": "Audio Generator",
-          "badge": "Coming"
+          "isDisable": false,
+          "title": "Graphic editor",
+          "badge": ""
         },
         {
           "link": "#",
-          "isDisable": true,
-          "title": "Edu.feedback",
-          "badge": "Coming"
+          "isDisable": false,
+          "title": "Clean up",
+          "badge": ""
         },
         {
           "link": "#",
-          "isDisable": true,
-          "title": "Website Generator",
-          "badge": "Coming"
+          "isDisable": false,
+          "title": "Upscaler",
+          "badge": ""
+        },
+        {
+          "link": "#",
+          "isDisable": false,
+          "title": "QR Code Generator",
+          "badge": ""
+        },
+        {
+          "link": "#",
+          "isDisable": false,
+          "title": "Image Search Engine",
+          "badge": ""
+        },
+        {
+          "link": "#",
+          "isDisable": false,
+          "title": "Component Library",
+          "badge": ""
         }
       ]
     },
@@ -104,12 +106,6 @@
       "inner": [
         {
           "heading": "Inner Pages",
-          "isComing": false
-        },
-        {
-          "link": "/styleguide",
-          "text": "Style Guide",
-          "badge": "Hot",
           "isComing": false
         },
         {
@@ -180,44 +176,8 @@
           "isComing": false
         },
         {
-          "link": "/notification",
-          "text": "Notification",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/chat-export",
-          "text": "Chat Export",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/appearance",
-          "text": "Apperance",
-          "badge": "",
-          "isComing": false
-        },
-        {
           "link": "/plans-billing",
           "text": "Plans and Billing",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/sessions",
-          "text": "Sessions",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/application",
-          "text": "Application",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/release-notes",
-          "text": "Release notes",
           "badge": "",
           "isComing": false
         },
@@ -288,18 +248,6 @@
           "isComing": true
         }
       ]
-    },
-    {
-      "link": "/roadmap",
-      "isIcon": false,
-      "isMenu": false,
-      "text": "Roadmap"
-    },
-    {
-      "link": "/utilize",
-      "isIcon": false,
-      "isMenu": false,
-      "text": "How to use"
     }
   ],
   "smallNavItem": [

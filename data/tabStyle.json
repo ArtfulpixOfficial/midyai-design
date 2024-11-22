@@ -1,12 +1,12 @@
 {
   "TabStyleOne": [
     {
-      "title": "Video generating AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export-vedio.png",
-      "menuId": "video-generator",
-      "text": "Vedio Generator",
-      "target": "video-generate",
-      "iconImg": "/images/icons/video-g.png",
+      "title": "Image generating AI refers to artificial intelligence.",
+      "img": "/images/generator-img/image-generator-section.png",
+      "menuId": "image-generator",
+      "text": "Image Generator",
+      "target": "image-generate",
+      "iconImg": "/images/icons/image-g.png",
       "isSelect": false,
       "subItem": [
         {
@@ -24,12 +24,12 @@
       ]
     },
     {
-      "title": "Audio generating AI refers to artificial intelligence.",
+      "title": "Chat Assistants AI refers to artificial intelligence.",
       "img": "/images/generator-img/chat-export-audio.png",
-      "menuId": "audio-generator",
-      "text": "Audio Generator",
-      "target": "audio-generate",
-      "iconImg": "/images/icons/audio-g.png",
+      "menuId": "chat-assistants",
+      "text": "Chat Assistants",
+      "target": "chat-assistants",
+      "iconImg": "/images/icons/chat-assistants.png",
       "isSelect": true,
       "subItem": [
         {
@@ -47,12 +47,12 @@
       ]
     },
     {
-      "title": "Photo generating AI refers to artificial intelligence.",
+      "title": "Replace Background AI refers to artificial intelligence.",
       "img": "/images/generator-img/chat-export-photo.png",
-      "menuId": "photo-generator",
-      "text": "Photo Generator",
-      "target": "photo-generate",
-      "iconImg": "/images/icons/photo-g.png",
+      "menuId": "replace-background",
+      "text": "Replace Background",
+      "target": "replace-background",
+      "iconImg": "/images/icons/replace-b.png",
       "isSelect": false,
       "subItem": [
         {
@@ -70,12 +70,12 @@
       ]
     },
     {
-      "title": "Text generating AI refers to artificial intelligence.",
+      "title": "Remove Background AI refers to artificial intelligence.",
       "img": "/images/generator-img/chat-export.png",
-      "menuId": "text-generator",
-      "text": "Text Generator",
-      "target": "text-generate",
-      "iconImg": "/images/icons/text-g.png",
+      "menuId": "remove-background",
+      "text": "Remove Background",
+      "target": "remove-background",
+      "iconImg": "/images/icons/remove-b.png",
       "isSelect": false,
       "subItem": [
         {
@@ -93,12 +93,173 @@
       ]
     },
     {
-      "title": "Code generating AI refers to artificial intelligence.",
+      "title": "Text to Speech AI refers to artificial intelligence.",
+      "img": "/images/generator-img/chat-export.png",
+      "menuId": "text-to-speech",
+      "text": "Text to Speech",
+      "target": "text-to-speech",
+      "iconImg": "/images/icons/text-to-speech.png",
+      "isSelect": false,
+      "subItem": [
+        {
+          "text": "Transformer Models"
+        },
+        {
+          "text": "Conditional Generative Models"
+        },
+        {
+          "text": "Pre-trained Models"
+        },
+        {
+          "text": "Variational Autoencoders"
+        }
+      ]
+    },
+    {
+      "title": "Speech to Text AI refers to artificial intelligence.",
+      "img": "/images/generator-img/chat-export.png",
+      "menuId": "speech-to-text",
+      "text": "Speech to Text",
+      "target": "speech-to-text",
+      "iconImg": "/images/icons/speech-to-text.png",
+      "isSelect": false,
+      "subItem": [
+        {
+          "text": "Transformer Models"
+        },
+        {
+          "text": "Conditional Generative Models"
+        },
+        {
+          "text": "Pre-trained Models"
+        },
+        {
+          "text": "Variational Autoencoders"
+        }
+      ]
+    },
+    {
+      "title": "Graphic Editor AI refers to artificial intelligence.",
+      "img": "/images/generator-img/chat-export.png",
+      "menuId": "graphic-editor",
+      "text": "Graphic Editor",
+      "target": "graphic-editor",
+      "iconImg": "/images/icons/graphic-editor.png",
+      "isSelect": false,
+      "subItem": [
+        {
+          "text": "Transformer Models"
+        },
+        {
+          "text": "Conditional Generative Models"
+        },
+        {
+          "text": "Pre-trained Models"
+        },
+        {
+          "text": "Variational Autoencoders"
+        }
+      ]
+    },
+    {
+      "title": "Cleanup AI refers to artificial intelligence.",
+      "img": "/images/generator-img/chat-export.png",
+      "menuId": "cleanup",
+      "text": "Cleanup",
+      "target": "cleanup",
+      "iconImg": "/images/icons/cleanup.png",
+      "isSelect": false,
+      "subItem": [
+        {
+          "text": "Transformer Models"
+        },
+        {
+          "text": "Conditional Generative Models"
+        },
+        {
+          "text": "Pre-trained Models"
+        },
+        {
+          "text": "Variational Autoencoders"
+        }
+      ]
+    },
+    {
+      "title": "Upscaler AI refers to artificial intelligence.",
+      "img": "/images/generator-img/chat-export.png",
+      "menuId": "upscaler",
+      "text": "Upscaler",
+      "target": "upscaler",
+      "iconImg": "/images/icons/upscaler.png",
+      "isSelect": false,
+      "subItem": [
+        {
+          "text": "Transformer Models"
+        },
+        {
+          "text": "Conditional Generative Models"
+        },
+        {
+          "text": "Pre-trained Models"
+        },
+        {
+          "text": "Variational Autoencoders"
+        }
+      ]
+    },
+    {
+      "title": "QR Code Generator AI refers to artificial intelligence.",
+      "img": "/images/generator-img/chat-export.png",
+      "menuId": "qr-code-generator",
+      "text": "QR Code Generator",
+      "target": "qr-code-generator",
+      "iconImg": "/images/icons/qr-code-g.png",
+      "isSelect": false,
+      "subItem": [
+        {
+          "text": "Transformer Models"
+        },
+        {
+          "text": "Conditional Generative Models"
+        },
+        {
+          "text": "Pre-trained Models"
+        },
+        {
+          "text": "Variational Autoencoders"
+        }
+      ]
+    },
+    {
+      "title": "Image Search Engine AI refers to artificial intelligence.",
+      "img": "/images/generator-img/chat-export.png",
+      "menuId": "image-search-engine",
+      "text": "Image Search Engine",
+      "target": "image-search-engine",
+      "iconImg": "/images/icons/image-search-engine.png",
+      "isSelect": false,
+      "subItem": [
+        {
+          "text": "Transformer Models"
+        },
+        {
+          "text": "Conditional Generative Models"
+        },
+        {
+          "text": "Pre-trained Models"
+        },
+        {
+          "text": "Variational Autoencoders"
+        }
+      ]
+    },
+    {
+      "title": "Component Library AI refers to artificial intelligence.",
       "img": "/images/generator-img/chat-export-code.png",
-      "menuId": "code-generator",
-      "text": "Code Generator",
-      "target": "code-generate",
-      "iconImg": "/images/icons/code-g.png",
+      "menuId": "component-library",
+      "text": "Component Library",
+      "target": "component-library",
+      "iconImg": "/images/icons/component-library.png",
       "isSelect": false,
       "subItem": [
         {
@@ -121,8 +282,8 @@
       "tabId": "home",
       "target": "home-tab",
       "isSelect": true,
-      "menuText": "Connect with AI",
-      "img": "/images/split/split-1.png",
+      "menuText": "Image Generator",
+      "img": "/images/split/image-generator-section.png",
       "subTitle": "How it work",
       "title": "Connect with Al chatbot",
       "desc": "Dentify the platform or interface through which you can access the chatbot. This could be a website, a messaging app, or a dedicated application."
@@ -131,8 +292,8 @@
       "tabId": "profile",
       "target": "profile-tab",
       "isSelect": false,
-      "menuText": "Streamline Workflow",
-      "img": "/images/split/split-4.png",
+      "menuText": "Remove Background",
+      "img": "/images/split/remove-background-section.png",
       "subTitle": "Exploring Efficiency",
       "title": "Streamline Your Workflow",
       "desc": "Discover tools and techniques to optimize your workflow, making your tasks more efficient and manageable."
@@ -141,21 +302,11 @@
       "tabId": "contact",
       "target": "contact-tab",
       "isSelect": false,
-      "menuText": "Cybersecurity",
-      "img": "/images/split/split-3.png",
+      "menuText": "Replace Background",
+      "img": "/images/split/replace-background-section.png",
       "subTitle": "Navigating Cybersecurity",
       "title": "Protecting Your Digital Presence",
       "desc": "Gain insights into cybersecurity measures and strategies to safeguard your online identity and sensitive information."
-    },
-    {
-      "tabId": "contact",
-      "target": "contact-tab",
-      "isSelect": false,
-      "menuText": "Data Analysis",
-      "img": "/images/split/split-5.png",
-      "subTitle": "Mastering Data Analysis",
-      "title": "Demystifying Data Analytics",
-      "desc": "Learn the fundamentals of data analysis, including tools and methodologies, to extract meaningful insights from raw data."
     }
   ]
 }

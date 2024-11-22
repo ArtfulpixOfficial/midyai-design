@@ -16,7 +16,7 @@ const PlansBillingPage = () => {
             <HeaderDashboard display="d-none" />
 
             <PopupMobileMenu />
-            <LeftDashboardSidebar />
+            {/* <LeftDashboardSidebar /> */}
 
             <PlansBilling />
           </div>

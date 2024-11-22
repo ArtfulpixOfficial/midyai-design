@@ -16,7 +16,7 @@ const HelpFaqPage = () => {
             <HeaderDashboard display="d-none" />
 
             <PopupMobileMenu />
-            <LeftDashboardSidebar />
+            {/* <LeftDashboardSidebar /> */}
 
             <Help />
           </div>

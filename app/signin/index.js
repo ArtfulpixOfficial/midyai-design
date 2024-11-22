@@ -26,7 +26,7 @@ const SigninPage = () => {
                   </div>
                   <div className="signup-box-bottom">
                     <div className="signup-box-content">
-                      <div className="social-btn-grp">
+                      <div className="social-btn-grp justify-content-center">
                         <a className="btn-default btn-border" href="#">
                           <span className="icon-left">
                             <Image
@@ -38,7 +38,7 @@ const SigninPage = () => {
                           </span>
                           Login with Google
                         </a>
-                        <a className="btn-default btn-border" href="#">
+                        {/* <a className="btn-default btn-border" href="#">
                           <span className="icon-left">
                             <Image
                               src={facebook}
@@ -48,7 +48,7 @@ const SigninPage = () => {
                             />
                           </span>
                           Login with Facebook
-                        </a>
+                        </a> */}
                       </div>
                       <div className="text-social-area">
                         <hr />
@@ -133,14 +133,14 @@ const SigninPage = () => {
                           <div className="meta-info-section">
                             <h4 className="title-text mb--0">Guy Hawkins</h4>
                             <p className="desc mb--20">Nursing Assistant</p>
-                            <div className="desc-img">
+                            {/* <div className="desc-img">
                               <Image
                                 src={brandImg}
                                 width={83}
                                 height={23}
                                 alt="Brand Image"
                               />
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>

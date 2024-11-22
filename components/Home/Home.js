@@ -37,8 +37,8 @@ const Home = () => {
     Sal();
 
     const intervalId = setInterval(() => {
-      setVisibleIndex((prevIndex) => (prevIndex + 1) % 3);
-    }, 2000);
+      setVisibleIndex((prevIndex) => (prevIndex + 1) % 12);
+    }, 3000);
 
     return () => {
       clearInterval(intervalId);
@@ -54,13 +54,13 @@ const Home = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-12">
-              <div className="inner text-center mt--140">
-                <h1 className="title display-one">
-                  Examine the Potential of
-                  <br />{" "}
-                  <span className="header-caption">
-                    <span className="cd-headline rotate-1">
-                      <span className="cd-words-wrapper">
+              <div className="inner mt--140">
+                <h1 className="title text-center display-one">
+                  Discover the Potential of
+                  <br />
+                  <span className="header-caption w-100 text-center">
+                    <span className="cd-headline rotate-1 w-100 text-center">
+                      <span className="cd-words-wrapper w-100 text-center ">
                         <b
                           className={
                             visibleIndex === 0
@@ -68,7 +68,7 @@ const Home = () => {
                               : "is-hidden theme-gradient"
                           }
                         >
-                          AI Chating
+                          Image generator
                         </b>
                         <b
                           className={
@@ -77,7 +77,7 @@ const Home = () => {
                               : "is-hidden theme-gradient"
                           }
                         >
-                          AI Writing
+                          Chat Assistants
                         </b>
                         <b
                           className={
@@ -86,29 +86,117 @@ const Home = () => {
                               : "is-hidden theme-gradient"
                           }
                         >
-                          AI Chating
+                          Replace background
+                        </b>
+                        <b
+                          className={
+                            visibleIndex === 3
+                              ? "is-visible theme-gradient"
+                              : "is-hidden theme-gradient"
+                          }
+                        >
+                          Remove background
+                        </b>
+                        <b
+                          className={
+                            visibleIndex === 4
+                              ? "is-visible theme-gradient"
+                              : "is-hidden theme-gradient"
+                          }
+                        >
+                          Text to speech
+                        </b>
+                        <b
+                          className={
+                            visibleIndex === 5
+                              ? "is-visible theme-gradient"
+                              : "is-hidden theme-gradient"
+                          }
+                        >
+                          Speech to text
+                        </b>
+                        <b
+                          className={
+                            visibleIndex === 6
+                              ? "is-visible theme-gradient"
+                              : "is-hidden theme-gradient"
+                          }
+                        >
+                          Graphic editor
+                        </b>
+                        <b
+                          className={
+                            visibleIndex === 7
+                              ? "is-visible theme-gradient"
+                              : "is-hidden theme-gradient"
+                          }
+                        >
+                          Clean up
+                        </b>
+                        <b
+                          className={
+                            visibleIndex === 8
+                              ? "is-visible theme-gradient"
+                              : "is-hidden theme-gradient"
+                          }
+                        >
+                          Upscaler
+                        </b>
+                        <b
+                          className={
+                            visibleIndex === 9
+                              ? "is-visible theme-gradient"
+                              : "is-hidden theme-gradient"
+                          }
+                        >
+                          QR Code Generator
+                        </b>
+                        <b
+                          className={
+                            visibleIndex === 10
+                              ? "is-visible theme-gradient"
+                              : "is-hidden theme-gradient"
+                          }
+                        >
+                          Image Search Engine
+                        </b>
+                        <b
+                          className={
+                            visibleIndex === 11
+                              ? "is-visible theme-gradient"
+                              : "is-hidden theme-gradient"
+                          }
+                        >
+                          Component Library
                         </b>
                       </span>
                     </span>
-                  </span>{" "}
-                  AI Hack
+                  </span>
+                  {/* AI Hack */}
                 </h1>
-                <p className="description">
-                  Unleash Brainwave's AI potential. Use the open AI <br />{" "}
-                  conversation app Rainbow theme
+                <p className="description w-100 text-center">
+                  Unleash the AI potential of MidyAI Design. Use AI tools to
+                  empower your work
                 </p>
-                <div className="form-group">
-                  <textarea
+                {/* <div className="form-group"> */}
+                {/* <textarea
                     name="text"
                     id="slider-text-area"
                     cols="30"
                     rows="2"
                     placeholder="Enter a prompt, for example: a fundraising deck to a mobile finance app called Intuitive"
-                  ></textarea>
-                  <Link className="btn-default " href="/text-generator">
-                    Start with AI
-                  </Link>
-                </div>
+                  ></textarea> */}
+                {/* <Link className="btn-default " href="/text-generator">
+                  Start with AI
+                </Link> */}
+                <a
+                  className="btn-default "
+                  href="/text-generator"
+                  target="_blank"
+                >
+                  Start with AI
+                </a>
+                {/* </div> */}
                 <div className="inner-shape">
                   <Image
                     src={shapeOne}
@@ -141,7 +229,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-11 col-xl-11 justify-content-center">
+            {/* <div className="col-lg-11 col-xl-11 justify-content-center">
               <div className="slider-frame">
                 <Image
                   className="slider-image-effect"
@@ -151,7 +239,7 @@ const Home = () => {
                   alt="Banner Images"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -184,7 +272,7 @@ const Home = () => {
                 data-sal-delay="100"
               >
                 <p className="b1 mb--0 small-title">
-                  truest 800,000+ HIGHLY PRODUCTIVE Company
+                  Trusted by +500 productive companies
                 </p>
               </div>
             </div>
@@ -209,7 +297,7 @@ const Home = () => {
               >
                 <h4 className="subtitle">
                   <span className="theme-gradient">
-                    RAINBOW UNLOCKS THE POTENTIAL ai
+                    MidyAI UNLOCKS THE POTENTIAL ai
                   </span>
                 </h4>
                 <h2 className="title mb--0">
@@ -233,7 +321,7 @@ const Home = () => {
                 data-sal-delay="150"
               >
                 <h4 className="subtitle">
-                  <span className="theme-gradient">Assisting individuals</span>
+                  <span className="theme-gradient">Chat Assistants</span>
                 </h4>
                 <h2 className="title mb--60">
                   Chat Smarter, Not <br /> Harder with
@@ -269,10 +357,7 @@ const Home = () => {
                 <h4 className="subtitle ">
                   <span className="theme-gradient">AI Collaboration</span>
                 </h4>
-                <h2 className="title mb--20">
-                  AI Chat app for seamless
-                  <br /> collaboration
-                </h2>
+                <h2 className="title mb--20">All tools within one</h2>
                 <Link
                   className="btn-default btn-large color-blacked"
                   href="/contact"
@@ -308,11 +393,11 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="rainbow-rn-cta">
+      {/* <div className="rainbow-rn-cta">
         <div className="container">
           <CtaOne />
         </div>
-      </div>
+      </div> */}
 
       <div className="aiwave-pricing-area wrapper rainbow-section-gap-big">
         <div className="container">
@@ -332,7 +417,7 @@ const Home = () => {
                 </h2>
               </div>
 
-              <nav className="aiwave-tab">
+              {/* <nav className="aiwave-tab">
                 <div
                   className="tab-btn-grp nav nav-tabs text-center justify-content-center"
                   id="nav-tab"
@@ -362,7 +447,7 @@ const Home = () => {
                       </button>
                     ))}
                 </div>
-              </nav>
+              </nav> */}
             </div>
           </div>
 
@@ -384,7 +469,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="rainbow-testimonial-area rainbow-section-gap">
+      {/* <div className="rainbow-testimonial-area rainbow-section-gap">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -403,7 +488,7 @@ const Home = () => {
           </div>
         </div>
         <Testimonial />
-      </div>
+      </div> */}
 
       <div className="rainbow-brand-area rainbow-section-gap">
         <div className="container">
