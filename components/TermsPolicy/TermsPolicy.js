@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const TermsPolicy = () => {
@@ -9,92 +8,208 @@ const TermsPolicy = () => {
           <div className="rbt-dashboard-content rainbow-section-gap">
             <div className="banner-area">
               <div className="settings-area">
-                <h3 className="title">Terms And Condition</h3>
+                <h3 className="title">Terms and Conditions of Use</h3>
               </div>
             </div>
             <div className="content-page">
               <div className="chat-box-list">
                 <div className="content">
-                  <h4>Welcome to AiWave Privacy Policy</h4>
-                  <ol>
-                    <li>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur (the “Sites”).
-                    </li>
-                    <li>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore veritatis et
-                      quasi architecto beatae vitae dicta sunt explicabo.
-                    </li>
-                    <li>
-                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                      aut odit aut fugit, sed quia consequuntur magni dolores
-                      eos qui ratione voluptatem sequi nesciunt. Neque porro
-                      quisquam est, qui dolorem ipsum quia dolor sit amet,
-                      consectetur, adipisci velit, sed quia non numquam eius
-                      modi tempora incidunt ut labore et dolore magnam aliquam
-                      quaerat voluptatem.
-                    </li>
-                  </ol>
+                  <h4>Last Updated: 11/19/2024</h4>
+                  <p>
+                    By using the services of MidyAI Design, you expressly agree
+                    to comply with the terms and conditions outlined in this
+                    document. These terms are designed to protect the interests
+                    of MidyAI Design, its tools, legal representatives, and
+                    users. If you do not agree to these terms, please refrain
+                    from using our services.
+                  </p>
 
-                  <h4>The type of personal information we collect</h4>
+                  <h4>1. Acceptance of Terms</h4>
+                  <p>
+                    Accessing and using the services provided by MidyAI Design
+                    constitutes your full and unconditional agreement to these
+                    terms. We reserve the right to modify these terms at any
+                    time, and it is your responsibility to review them
+                    periodically. Continued use of the service after any
+                    modifications signifies your acceptance of the updated
+                    terms.
+                  </p>
 
-                  <ol>
+                  <h4>2. Intellectual Property</h4>
+                  <p>
+                    All intellectual property rights related to MidyAI Design,
+                    including but not limited to tools, software, designs,
+                    trademarks, logos, generated content, and documentation, are
+                    the exclusive property of MidyAI Design or its licensors.
+                  </p>
+                  <ul>
                     <li>
-                      We collect certain personal information about visitors and
-                      users of our Sites.{" "}
-                      <Link href="http://rainbowit.net/themes/imroz">
-                        http://rainbowit.net/themes/imroz
-                      </Link>
+                      <strong>Usage Restrictions:</strong> You may not copy,
+                      modify, distribute, sell, license, or exploit any
+                      resources of MidyAI Design without prior written consent.
                     </li>
                     <li>
-                      Ut enim ad minima veniam, quis nostrum exercitationem
-                      ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-                      commodi consequatur? Quis autem vel eum iure reprehenderit
-                      qui in ea voluptate velit esse quam nihil molestiae
-                      consequatur, vel illum qui dolorem eum fugiat quo voluptas
-                      nulla pariatur.
+                      <strong>Generated Content:</strong> While you may use the
+                      outputs generated by our tools for personal or commercial
+                      purposes, MidyAI Design retains the rights to the
+                      algorithms, processes, and systems that produce such
+                      content.
                     </li>
-                  </ol>
+                  </ul>
 
-                  <h4>How we collect personal information</h4>
+                  <h4>3. Limitation of Liability</h4>
+                  <p>
+                    MidyAI Design and its legal representatives shall not be
+                    liable for:
+                  </p>
+                  <ul>
+                    <li>
+                      Direct, indirect, incidental, punitive, or consequential
+                      damages arising from the use or inability to use our
+                      tools.
+                    </li>
+                    <li>
+                      Loss of data, revenue, or profits, even if advised of the
+                      possibility of such damages.
+                    </li>
+                    <li>
+                      Any inaccurate, inappropriate, or unlawful content
+                      generated by users using our tools.
+                    </li>
+                  </ul>
 
-                  <ol>
+                  <h4>4. User Accounts</h4>
+                  <p>
+                    To access certain features of MidyAI Design, you may need to
+                    create an account. By doing so, you agree to:
+                  </p>
+                  <ul>
                     <li>
-                      I must explain to you how all this mistaken idea of
-                      denouncing pleasure and praising pain was born and I will
-                      give you a complete account of the system, and expound the
-                      actual teachings.
+                      Provide truthful, complete, and up-to-date information.
                     </li>
                     <li>
-                      At vero eos et accusamus et iusto odio dignissimos ducimus
-                      qui blanditiis praesentium voluptatum deleniti atque
-                      corrupti quos dolores et quas molestias excepturi sint
-                      occaecati cupiditate non provident similique sunt in culpa
-                      qui officia deserunt mollitia animi, id est laborum et
-                      dolorum fuga.
+                      Be responsible for the confidentiality of your login
+                      credentials and all activities conducted under your
+                      account.
                     </li>
                     <li>
-                      On the other hand, we denounce with righteous indignation
-                      and dislike men who are so beguiled and demoralized by the
-                      charms of pleasure of the moment, so blinded by desire,
-                      that they cannot foresee the pain and trouble that are
-                      bound to ensue; and equal blame belongs to those who fail
-                      in their duty through weakness of will, which is the same
-                      as saying through shrinking from toil and pain. These
-                      cases are perfectly simple and easy to distinguish. In a
-                      free hour, when our power of choice is untrammelled and
-                      when nothing prevents our being able to do what we like
-                      best, every pleasure is to be welcomed and every pain
-                      avoided. But in certain circumstances and owing to the
-                      claims of duty or the obligations{" "}
+                      Notify us immediately of any unauthorized use of your
+                      account.
                     </li>
-                  </ol>
+                  </ul>
+                  <p>
+                    We reserve the right to suspend or terminate accounts if we
+                    suspect fraudulent, illegal, or otherwise inappropriate
+                    activity.
+                  </p>
+
+                  <h4>5. Permitted Use</h4>
+                  <p>By using MidyAI Design, you agree to:</p>
+                  <ul>
+                    <li>
+                      Not use our tools to create content that infringes on the
+                      rights of third parties, is illegal, defamatory, obscene,
+                      discriminatory, or otherwise harmful.
+                    </li>
+                    <li>
+                      Not attempt to decompile, reverse engineer, or extract the
+                      source code of our tools or services.
+                    </li>
+                    <li>
+                      Not use our services for competitive purposes or in ways
+                      that could harm MidyAI Design’s reputation.
+                    </li>
+                  </ul>
+                  <p>
+                    Any unauthorized use will result in immediate termination of
+                    access and potential legal action.
+                  </p>
+
+                  <h4>6. Indemnification</h4>
+                  <p>
+                    You agree to indemnify and hold harmless MidyAI Design, its
+                    employees, affiliates, and legal representatives from any
+                    claims, demands, losses, or damages, including reasonable
+                    attorney fees, arising from:
+                  </p>
+                  <ul>
+                    <li>
+                      Your use of the tools and services provided by MidyAI
+                      Design.
+                    </li>
+                    <li>Your violation of these terms and conditions.</li>
+                    <li>
+                      Any content you generate or actions you take using our
+                      tools.
+                    </li>
+                  </ul>
+
+                  <h4>7. Privacy and Data Protection</h4>
+                  <p>
+                    MidyAI Design collects and processes personal data in
+                    accordance with its Privacy Policy. While we are committed
+                    to protecting your information, we cannot guarantee absolute
+                    security for data transmitted online.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>Consent:</strong> By using our services, you agree
+                      to the collection and use of your data as outlined in our
+                      policy.
+                    </li>
+                    <li>
+                      <strong>User Responsibility:</strong> You are responsible
+                      for safeguarding your credentials and personal data on
+                      devices accessing the service.
+                    </li>
+                  </ul>
+
+                  <h4>8. Dispute Resolution</h4>
+                  <p>
+                    In the event of a dispute, the parties agree to resolve any
+                    conflict related to the use of MidyAI Design’s services
+                    through amicable negotiation. If no agreement is reached,
+                    the dispute will be submitted to binding arbitration under
+                    the laws of the United States.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>Applicable Law:</strong> These terms are governed
+                      by the laws of the United States, without regard to its
+                      conflict of law principles.
+                    </li>
+                    <li>
+                      <strong>Exclusive Jurisdiction:</strong> Any legal action
+                      must be initiated in the courts located in the United
+                      States.
+                    </li>
+                  </ul>
+
+                  <h4>9. Termination of Service</h4>
+                  <p>
+                    MidyAI Design reserves the right to suspend or terminate
+                    access to its services, accounts, or any part thereof at any
+                    time, without notice, if it deems that these terms have been
+                    violated or for any other necessary reason.
+                  </p>
+
+                  <h4>10. General Provisions</h4>
+                  <ul>
+                    <li>
+                      <strong>Severability:</strong> If any provision of these
+                      terms is deemed invalid or unenforceable, the remaining
+                      provisions will remain in full force and effect.
+                    </li>
+                    <li>
+                      <strong>Waiver:</strong> Failure to enforce any right or
+                      provision of these terms by MidyAI Design shall not
+                      constitute a waiver of such right or provision.
+                    </li>
+                  </ul>
+                  <p>
+                    Thank you for choosing MidyAI Design. Responsible use
+                    ensures a safe and efficient experience for all our users.
+                  </p>
                 </div>
               </div>
             </div>

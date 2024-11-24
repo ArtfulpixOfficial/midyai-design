@@ -620,33 +620,28 @@
   ],
   "accordion": [
     {
-      "title": "What is AiWave ? How does it work?",
-      "desc": "AiWave is an AI-powered messaging platform that understands and responds to your natural language queries. Ask anything you'd typically ask a human assistant—get weather updates, news, restaurant recommendations, and more!",
+      "title": "How does the free plan work and what limitations does it have?",
+      "desc": "We offer a free plan with a limit on executions for certain tools. The free plan includes tools that have no usage limit and can be executed at any time. To review the specific limits of these tools, please visit our pricing page.",
       "isExpand": true
     },
     {
-      "title": "What kind of questions can I ask AiWave?",
-      "desc": "AiWave, an AI-driven messaging platform, adeptly communicates with users using natural language understanding. It delivers helpful responses to your inquiries and requests.",
+      "title": "What is the cancellation process and are there any early cancellation fees?",
+      "desc": "The cancellation process is very simple, you just need to log into your profile and request the cancellation of your monthly plan. This action does not generate any execution charges.",
       "isExpand": false
     },
     {
-      "title": "Can I get update regularly and For how long do I get updates?",
-      "desc": "Yes, We will get update the AiWave. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times. Our dedicated team works for update.",
+      "title": "If I upgrade to a premium plan, can I switch back to the free plan at any time?",
+      "desc": "If you upgrade to a more advanced plan than the free version, you will always have the possibility to switch to a plan that better suits your needs or requirements.",
       "isExpand": false
     },
     {
-      "title": "How can I get the customer support?",
-      "desc": "After purchasing the product need you any support you can be share with us with sending mail to rainbowit10@gmail.com.",
+      "title": "Do the AI tools require a constant internet connection to work?",
+      "desc": "It is necessary to maintain an internet connection to execute the artificial intelligence tools that MidyAI Designer offers for you.",
       "isExpand": false
     },
     {
-      "title": "HIs my data safe with AiWave?",
-      "desc": "Feel free to toss any questions at AiWave, just like you would with a human helper—whether it's about the weather, the latest news, restaurant suggestions, or anything else you fancy!",
-      "isExpand": false
-    },
-    {
-      "title": "Is AiWave available in multiple languages?",
-      "desc": "Yes, AiWave is designed to support multiple languages, offering a versatile and inclusive communication experience for users worldwide.",
+      "title": "Can I use the tools on different devices (mobile, tablet, computer) with the same account?",
+      "desc": "Yes, you can use the tools on various devices such as: mobile, tablet, and computer, maintaining the same account for each of them.",
       "isExpand": false
     }
   ]

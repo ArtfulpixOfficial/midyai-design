@@ -2,7 +2,7 @@
   "TabStyleOne": [
     {
       "title": "Image generating AI refers to artificial intelligence.",
-      "img": "/images/generator-img/image-generator-section.png",
+      "img": "/images/generator-img/image-generator.png",
       "menuId": "image-generator",
       "text": "Image Generator",
       "target": "image-generate",
@@ -25,7 +25,7 @@
     },
     {
       "title": "Chat Assistants AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export-audio.png",
+      "img": "/images/generator-img/chat-assistants.png",
       "menuId": "chat-assistants",
       "text": "Chat Assistants",
       "target": "chat-assistants",
@@ -48,7 +48,7 @@
     },
     {
       "title": "Replace Background AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export-photo.png",
+      "img": "/images/generator-img/replace-background.png",
       "menuId": "replace-background",
       "text": "Replace Background",
       "target": "replace-background",
@@ -71,7 +71,7 @@
     },
     {
       "title": "Remove Background AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export.png",
+      "img": "/images/generator-img/remove-background.png",
       "menuId": "remove-background",
       "text": "Remove Background",
       "target": "remove-background",
@@ -94,7 +94,7 @@
     },
     {
       "title": "Text to Speech AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export.png",
+      "img": "/images/generator-img/text-to-speech.png",
       "menuId": "text-to-speech",
       "text": "Text to Speech",
       "target": "text-to-speech",
@@ -117,7 +117,7 @@
     },
     {
       "title": "Speech to Text AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export.png",
+      "img": "/images/generator-img/speech-to-text.png",
       "menuId": "speech-to-text",
       "text": "Speech to Text",
       "target": "speech-to-text",
@@ -140,7 +140,7 @@
     },
     {
       "title": "Graphic Editor AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export.png",
+      "img": "/images/generator-img/graphic-editor.png",
       "menuId": "graphic-editor",
       "text": "Graphic Editor",
       "target": "graphic-editor",
@@ -163,7 +163,7 @@
     },
     {
       "title": "Cleanup AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export.png",
+      "img": "/images/generator-img/clean-up.png",
       "menuId": "cleanup",
       "text": "Cleanup",
       "target": "cleanup",
@@ -186,7 +186,7 @@
     },
     {
       "title": "Upscaler AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export.png",
+      "img": "/images/generator-img/upscaler.png",
       "menuId": "upscaler",
       "text": "Upscaler",
       "target": "upscaler",
@@ -209,7 +209,7 @@
     },
     {
       "title": "QR Code Generator AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export.png",
+      "img": "/images/generator-img/qr-code-generator.png",
       "menuId": "qr-code-generator",
       "text": "QR Code Generator",
       "target": "qr-code-generator",
@@ -232,34 +232,11 @@
     },
     {
       "title": "Image Search Engine AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export.png",
+      "img": "/images/generator-img/search-image-engine.png",
       "menuId": "image-search-engine",
       "text": "Image Search Engine",
       "target": "image-search-engine",
       "iconImg": "/images/icons/image-search-engine.png",
-      "isSelect": false,
-      "subItem": [
-        {
-          "text": "Transformer Models"
-        },
-        {
-          "text": "Conditional Generative Models"
-        },
-        {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
-        }
-      ]
-    },
-    {
-      "title": "Component Library AI refers to artificial intelligence.",
-      "img": "/images/generator-img/chat-export-code.png",
-      "menuId": "component-library",
-      "text": "Component Library",
-      "target": "component-library",
-      "iconImg": "/images/icons/component-library.png",
       "isSelect": false,
       "subItem": [
         {
