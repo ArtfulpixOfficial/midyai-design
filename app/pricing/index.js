@@ -223,7 +223,7 @@ const PricingPage = () => {
 
           <BackToTop />
           <Footer />
-          <Copyright />
+          {/* <Copyright /> */}
         </Context>
       </main>
     </>

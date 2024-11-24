@@ -39,7 +39,7 @@ const ContactPage = () => {
 
           <BackToTop />
           <Footer />
-          <Copyright />
+          {/* <Copyright /> */}
         </Context>
       </main>
     </>
