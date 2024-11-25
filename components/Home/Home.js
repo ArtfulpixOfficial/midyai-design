@@ -191,7 +191,7 @@ const Home = () => {
                 </Link> */}
                 <a
                   className="btn-default "
-                  href="/text-generator"
+                  href="/image-generator"
                   target="_blank"
                 >
                   Start with AI

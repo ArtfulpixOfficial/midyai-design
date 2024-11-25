@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const ProfileBody = () => {
   const [text, setText] = useState(
-    "My name is Fazlay Elahi Rafi and I'm a Front-End Developer of #Rainbow IT in Bangladesh, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."
+    "My name is Fazlay Elahi Rafi and I'm a Front-End Developer, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."
   );
 
   const handleChange = (event) => {

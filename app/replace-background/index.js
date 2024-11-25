@@ -9,10 +9,10 @@ import LeftDashboardSidebar from "@/components/Header/LeftDashboardSidebar";
 import HeaderDashboard from "@/components/Header/HeaderDashboard";
 import RightDashboardSidebar from "@/components/Header/RightDashboardSidebar";
 import Modal from "@/components/Common/Modal";
-import TextGenerator from "@/components/TextGenerator/TextGenerator";
 import StaticbarDashboard from "@/components/Common/StaticBarDashboard";
+import ImageGenerator from "@/components/ImageGenerator/ImageGenerator";
 
-const TextGeneratorPage = () => {
+const ReplaceBackgroundPage = () => {
   return (
     <>
       <main className="page-wrapper rbt-dashboard-page">
@@ -24,20 +24,20 @@ const TextGeneratorPage = () => {
             <Modal />
             <PopupMobileMenu />
 
-            <div className="rbt-main-content">
+            {/* <div className="rbt-main-content">
               <div className="rbt-daynamic-page-content">
                 <div className="rbt-dashboard-content">
                   <div className="content-page">
                     <div className="chat-box-section">
-                      <TextGenerator />
+                      <ImageGenerator />
                       <StaticbarDashboard />
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            {/* <div
-              className="iframe-container"
+            </div> */}
+            <div
+              className="iframe-container mt--95"
               style={{
                 width: "100%",
                 height: "800px",
@@ -45,14 +45,14 @@ const TextGeneratorPage = () => {
               }}
             >
               <iframe
-                src="https://midyaisdxl.netlify.app/"
+                src="https://midyaireplacebackground.netlify.app/"
                 width="100%"
                 height="100%"
                 frameBorder="0"
                 allowFullScreen
-                title="Midy AI SDXL App"
+                title="Midy AI Chat Assistants App"
               />
-            </div> */}
+            </div>
             <BackToTop />
           </Context>
         </div>
@@ -61,4 +61,4 @@ const TextGeneratorPage = () => {
   );
 };
 
-export default TextGeneratorPage;
+export default ReplaceBackgroundPage;

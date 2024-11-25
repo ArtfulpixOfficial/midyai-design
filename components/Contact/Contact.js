@@ -155,13 +155,15 @@ const Contact = () => {
                   <div className="inner">
                     <h4 className="title">Our Email Address</h4>
                     <p className="b2">
-                      <Link href="mailto:admin@gmail.com">admin@gmail.com</Link>
+                      <Link href="mailto:contactus@midyaidesign.com">
+                        contactus@midyaidesign.com
+                      </Link>
                     </p>
-                    <p className="b2">
+                    {/* <p className="b2">
                       <Link href="mailto:example@gmail.com">
                         example@gmail.com
                       </Link>
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>

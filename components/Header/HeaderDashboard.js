@@ -91,7 +91,7 @@ const HeaderDashboard = ({ display }) => {
                   </div>
                 </div>
 
-                <div className={`expand-btn-grp ${display}`}>
+                {/* <div className={`expand-btn-grp ${display}`}>
                   <button
                     className={`bg-solid-primary popup-dashboardright-btn ${
                       rightBar ? "" : "collapsed"
@@ -100,7 +100,7 @@ const HeaderDashboard = ({ display }) => {
                   >
                     <i className="fa-sharp fa-regular fa-sidebar-flip"></i>
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -30,7 +30,13 @@ const TabStyleOne = () => {
                       aria-controls={data.target}
                       aria-selected="false"
                     >
-                      <span className="generator-icon">
+                      <span
+                        className="generator-icon"
+                        style={{
+                          backgroundColor: "var(--color-white)",
+                          color: "var(--color-dark)",
+                        }}
+                      >
                         <Image
                           src={data.iconImg}
                           width={24}
@@ -76,7 +82,7 @@ const TabStyleOne = () => {
                             <div className="read-more">
                               <Link
                                 className="btn-default color-blacked"
-                                href="#"
+                                href={tab.link}
                               >
                                 Start Exploring Now
                                 <i className="fa-sharp fa-solid fa-arrow-right ps-2"></i>

@@ -37,19 +37,19 @@
               "text": "Image Generator"
             },
             {
-              "link": "/vedio-generator",
+              "link": "/remove-background",
               "text": "Remove Background"
             },
             {
-              "link": "/text-generator",
+              "link": "/replace-background",
               "text": "Replace Background"
             },
             {
-              "link": "/code-generator",
+              "link": "/text-to-speech",
               "text": "Text-To-Speech"
             },
             {
-              "link": "#",
+              "link": "/speech-to-text",
               "text": "Speech-To-Text"
             }
           ]
@@ -58,7 +58,7 @@
       "contact": [
         {
           "location": "8819 Ohio St. South Gate, North America, USA",
-          "mail": "example@domain.com",
+          "mail": "contactus@midyaidesign.com",
           "number": "1 386-688-3295"
         }
       ]

@@ -24,74 +24,74 @@
       "dropdown": true,
       "subItem": [
         {
-          "link": "/text-generator",
+          "link": "/image-generator",
           "isDisable": false,
           "title": "Image Generator",
           "badge": ""
         },
         {
-          "link": "/image-generator",
+          "link": "/chat-assistants",
           "isDisable": false,
           "title": "Chat Assistants",
           "badge": ""
         },
         {
-          "link": "/code-generator",
+          "link": "/replace-background",
           "isDisable": false,
           "title": "Replace background",
           "badge": ""
         },
         {
-          "link": "/image-editor",
+          "link": "/remove-background",
           "isDisable": false,
           "title": "Remove background",
           "badge": ""
         },
         {
-          "link": "/vedio-generator",
+          "link": "/text-to-speech",
           "isDisable": false,
           "title": "Text to speech",
           "badge": ""
         },
         {
-          "link": "/email-generator",
+          "link": "/speech-to-text",
           "isDisable": false,
           "title": "Speech to text",
           "badge": ""
         },
         {
-          "link": "#",
-          "isDisable": false,
+          "link": "/graphic-editor",
+          "isDisable": true,
           "title": "Graphic editor",
           "badge": ""
         },
         {
-          "link": "#",
+          "link": "/cleanup",
           "isDisable": false,
           "title": "Clean up",
           "badge": ""
         },
         {
-          "link": "#",
+          "link": "/upscaler",
           "isDisable": false,
           "title": "Upscaler",
           "badge": ""
         },
         {
-          "link": "#",
+          "link": "/qr-code-generator",
           "isDisable": false,
           "title": "QR Code Generator",
           "badge": ""
         },
         {
-          "link": "#",
+          "link": "/image-search-engine",
           "isDisable": false,
           "title": "Image Search Engine",
           "badge": ""
         },
         {
-          "link": "#",
-          "isDisable": false,
+          "link": "/component-library",
+          "isDisable": true,
           "title": "Component Library",
           "badge": ""
         }
@@ -142,12 +142,6 @@
         {
           "link": "/signup",
           "text": "Sign Up",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/team",
-          "text": "Team",
           "badge": "",
           "isComing": false
         },

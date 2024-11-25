@@ -8,6 +8,7 @@
       "target": "image-generate",
       "iconImg": "/images/icons/image-g.png",
       "isSelect": false,
+      "link": "/image-generator",
       "subItem": [
         {
           "text": "Transformer Models"
@@ -31,6 +32,7 @@
       "target": "chat-assistants",
       "iconImg": "/images/icons/chat-assistants.png",
       "isSelect": true,
+      "link": "/chat-assistants",
       "subItem": [
         {
           "text": "Transformer Models"
@@ -54,6 +56,7 @@
       "target": "replace-background",
       "iconImg": "/images/icons/replace-b.png",
       "isSelect": false,
+      "link": "/replace-background",
       "subItem": [
         {
           "text": "Transformer Models"
@@ -77,6 +80,7 @@
       "target": "remove-background",
       "iconImg": "/images/icons/remove-b.png",
       "isSelect": false,
+      "link": "/remove-background",
       "subItem": [
         {
           "text": "Transformer Models"
@@ -100,6 +104,7 @@
       "target": "text-to-speech",
       "iconImg": "/images/icons/text-to-speech.png",
       "isSelect": false,
+      "link": "/text-to-speech",
       "subItem": [
         {
           "text": "Transformer Models"
@@ -123,6 +128,7 @@
       "target": "speech-to-text",
       "iconImg": "/images/icons/speech-to-text.png",
       "isSelect": false,
+      "link": "/speech-to-text",
       "subItem": [
         {
           "text": "Transformer Models"
@@ -146,6 +152,7 @@
       "target": "graphic-editor",
       "iconImg": "/images/icons/graphic-editor.png",
       "isSelect": false,
+      "link": "#",
       "subItem": [
         {
           "text": "Transformer Models"
@@ -169,6 +176,7 @@
       "target": "cleanup",
       "iconImg": "/images/icons/cleanup.png",
       "isSelect": false,
+      "link": "/cleanup",
       "subItem": [
         {
           "text": "Transformer Models"
@@ -192,6 +200,7 @@
       "target": "upscaler",
       "iconImg": "/images/icons/upscaler.png",
       "isSelect": false,
+      "link": "/upscaler",
       "subItem": [
         {
           "text": "Transformer Models"
@@ -215,6 +224,7 @@
       "target": "qr-code-generator",
       "iconImg": "/images/icons/qr-code-g.png",
       "isSelect": false,
+      "link": "/qr-code-generator",
       "subItem": [
         {
           "text": "Transformer Models"
@@ -238,6 +248,7 @@
       "target": "image-search-engine",
       "iconImg": "/images/icons/image-search-engine.png",
       "isSelect": false,
+      "link": "/image-search-engine",
       "subItem": [
         {
           "text": "Transformer Models"
@@ -263,7 +274,8 @@
       "img": "/images/split/image-generator-section.png",
       "subTitle": "Image Generator",
       "title": "Turn your words into amazing images",
-      "desc": "AI tool that creates unique images from text descriptions. Transform your ideas into stunning visuals quickly and easily."
+      "desc": "AI tool that creates unique images from text descriptions. Transform your ideas into stunning visuals quickly and easily.",
+      "link": "/image-generator"
     },
     {
       "tabId": "removeBackground",
@@ -273,7 +285,8 @@
       "img": "/images/split/remove-background-section.png",
       "subTitle": "Remove Background",
       "title": "Get rid of any background in seconds",
-      "desc": "Tool that precisely separates subjects from any image automatically. Works perfectly with portraits, products, and complex objects."
+      "desc": "Tool that precisely separates subjects from any image automatically. Works perfectly with portraits, products, and complex objects.",
+      "link": "/remove-background"
     },
     {
       "tabId": "replaceBackground",
@@ -283,7 +296,8 @@
       "img": "/images/split/replace-background-section.png",
       "subTitle": "Replace Background",
       "title": "Change your scene instantly",
-      "desc": "Smart tool that removes the original background and allows you to instantly replace it with new scenes, maintaining the natural lighting of the main subject."
+      "desc": "Smart tool that removes the original background and allows you to instantly replace it with new scenes, maintaining the natural lighting of the main subject.",
+      "link": "/replace-background"
     }
   ]
 }

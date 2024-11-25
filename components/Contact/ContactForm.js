@@ -41,7 +41,7 @@ const ContactForm = () => {
         </div>
         <div className="col-12 mt--20">
           <div className="form-group mb--0">
-            <a className="btn-default" href="#">
+            <a className="btn-default" href="mailto:contactus@midyaidesign.com">
               Update Info
             </a>
           </div>
