@@ -256,34 +256,34 @@
   ],
   "advanceTab": [
     {
-      "tabId": "home",
-      "target": "home-tab",
+      "tabId": "imageGenerator",
+      "target": "imageGenerator",
       "isSelect": true,
       "menuText": "Image Generator",
       "img": "/images/split/image-generator-section.png",
-      "subTitle": "How it work",
-      "title": "Connect with Al chatbot",
-      "desc": "Dentify the platform or interface through which you can access the chatbot. This could be a website, a messaging app, or a dedicated application."
+      "subTitle": "Image Generator",
+      "title": "Turn your words into amazing images",
+      "desc": "AI tool that creates unique images from text descriptions. Transform your ideas into stunning visuals quickly and easily."
     },
     {
-      "tabId": "profile",
-      "target": "profile-tab",
+      "tabId": "removeBackground",
+      "target": "removeBackground",
       "isSelect": false,
       "menuText": "Remove Background",
       "img": "/images/split/remove-background-section.png",
-      "subTitle": "Exploring Efficiency",
-      "title": "Streamline Your Workflow",
-      "desc": "Discover tools and techniques to optimize your workflow, making your tasks more efficient and manageable."
+      "subTitle": "Remove Background",
+      "title": "Get rid of any background in seconds",
+      "desc": "Tool that precisely separates subjects from any image automatically. Works perfectly with portraits, products, and complex objects."
     },
     {
-      "tabId": "contact",
-      "target": "contact-tab",
+      "tabId": "replaceBackground",
+      "target": "replaceBackground",
       "isSelect": false,
       "menuText": "Replace Background",
       "img": "/images/split/replace-background-section.png",
-      "subTitle": "Navigating Cybersecurity",
-      "title": "Protecting Your Digital Presence",
-      "desc": "Gain insights into cybersecurity measures and strategies to safeguard your online identity and sensitive information."
+      "subTitle": "Replace Background",
+      "title": "Change your scene instantly",
+      "desc": "Smart tool that removes the original background and allows you to instantly replace it with new scenes, maintaining the natural lighting of the main subject."
     }
   ]
 }
