@@ -39,9 +39,12 @@ const PopupMobileMenu = () => {
                 <Image
                   className="logo-light"
                   src={logoLight}
-                  width={116}
-                  height={30}
+                  width={75}
+                  height={75}
                   alt="Corporate Logo"
+                  style={{
+                    maxHeight: "180px",
+                  }}
                 />
               </Link>
             </div>
@@ -57,7 +60,7 @@ const PopupMobileMenu = () => {
           <div className="content">
             <Nav />
 
-            <div className="rbt-sm-separator"></div>
+            {/* <div className="rbt-sm-separator"></div> */}
             <div className="rbt-default-sidebar-wrapper">
               <SmallNav />
             </div>

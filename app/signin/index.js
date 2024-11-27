@@ -6,7 +6,7 @@ import userImg from "../../public/images/team/team-02sm.jpg";
 import brandImg from "../../public/images/brand/brand-t.png";
 import google from "../../public/images/sign-up/google.png";
 import facebook from "../../public/images/sign-up/facebook.png";
-
+import bgImg from "../../public/images/bg/signin-signup-background.png";
 const SigninPage = () => {
   return (
     <>
@@ -92,8 +92,9 @@ const SigninPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 right-wrapper">
-                <div className="client-feedback-area">
+              <div className="col-lg-6 right-wrapper align-items-stretch px-0">
+                <Image src={bgImg} width={800} />
+                {/* <div className="client-feedback-area">
                   <div className="single-feedback">
                     <div className="inner">
                       <div className="meta-img-section">
@@ -133,20 +134,20 @@ const SigninPage = () => {
                           <div className="meta-info-section">
                             <h4 className="title-text mb--0">Guy Hawkins</h4>
                             <p className="desc mb--20">Nursing Assistant</p>
-                            {/* <div className="desc-img">
+                            <div className="desc-img">
                               <Image
                                 src={brandImg}
                                 width={83}
                                 height={23}
                                 alt="Brand Image"
                               />
-                            </div> */}
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

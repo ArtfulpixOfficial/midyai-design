@@ -1,7 +1,7 @@
 {
   "TabStyleOne": [
     {
-      "title": "Image generating AI refers to artificial intelligence.",
+      "title": "Image Generator",
       "img": "/images/generator-img/image-generator.png",
       "menuId": "image-generator",
       "text": "Image Generator",
@@ -11,21 +11,18 @@
       "link": "/image-generator",
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Creates original images from scratch based on textual descriptions"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Generates personalized digital art for various purposes"
         },
         {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
+          "text": "Allows designing unique illustrations without artistic skills"
         }
       ]
     },
     {
-      "title": "Chat Assistants AI refers to artificial intelligence.",
+      "title": "Chat Assistants",
       "img": "/images/generator-img/chat-assistants.png",
       "menuId": "chat-assistants",
       "text": "Chat Assistants",
@@ -35,21 +32,18 @@
       "link": "/chat-assistants",
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Provides intelligent and personalized responses"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Offers assistance in multiple languages and subject areas"
         },
         {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
+          "text": "Helps with tasks like writing, analysis, and problem-solving"
         }
       ]
     },
     {
-      "title": "Replace Background AI refers to artificial intelligence.",
+      "title": "Replace Background",
       "img": "/images/generator-img/replace-background.png",
       "menuId": "replace-background",
       "text": "Replace Background",
@@ -59,21 +53,18 @@
       "link": "/replace-background",
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Substitutes image backgrounds with alternative scenes"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Creates creative photographic compositions"
         },
         {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
+          "text": "Transforms image scenery without complex editing"
         }
       ]
     },
     {
-      "title": "Remove Background AI refers to artificial intelligence.",
+      "title": "Remove Background",
       "img": "/images/generator-img/remove-background.png",
       "menuId": "remove-background",
       "text": "Remove Background",
@@ -83,21 +74,18 @@
       "link": "/remove-background",
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Eliminates image backgrounds quickly and precisely"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Isolates objects or people from their original environment"
         },
         {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
+          "text": "Facilitates image editing and reuse in different contexts"
         }
       ]
     },
     {
-      "title": "Text to Speech AI refers to artificial intelligence.",
+      "title": "Text-to-Speech",
       "img": "/images/generator-img/text-to-speech.png",
       "menuId": "text-to-speech",
       "text": "Text to Speech",
@@ -107,21 +95,18 @@
       "link": "/text-to-speech",
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Converts written text into spoken audio"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Enables document reading through synthetic voice"
         },
         {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
+          "text": "Facilitates content consumption for visually impaired individuals"
         }
       ]
     },
     {
-      "title": "Speech to Text AI refers to artificial intelligence.",
+      "title": "Speech-to-Text",
       "img": "/images/generator-img/speech-to-text.png",
       "menuId": "speech-to-text",
       "text": "Speech to Text",
@@ -131,21 +116,18 @@
       "link": "/speech-to-text",
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Transforms spoken audio into written text"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Allows transcription of conversations, interviews, and voice notes"
         },
         {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
+          "text": "Aids in documentation and content accessibility"
         }
       ]
     },
     {
-      "title": "Graphic Editor AI refers to artificial intelligence.",
+      "title": "Graphic Editor",
       "img": "/images/generator-img/graphic-editor.png",
       "menuId": "graphic-editor",
       "text": "Graphic Editor",
@@ -155,21 +137,18 @@
       "link": "#",
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Allows editing and manipulating images with advanced tools"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Offers professional effects and filters"
         },
         {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
+          "text": "Facilitates graphic design creation without technical knowledge"
         }
       ]
     },
     {
-      "title": "Cleanup AI refers to artificial intelligence.",
+      "title": "Clean Up",
       "img": "/images/generator-img/clean-up.png",
       "menuId": "cleanup",
       "text": "Cleanup",
@@ -179,21 +158,18 @@
       "link": "/cleanup",
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Removes unwanted elements from images"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Improves visual quality and cleanliness"
         },
         {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
+          "text": "Restores photographs with minor imperfections"
         }
       ]
     },
     {
-      "title": "Upscaler AI refers to artificial intelligence.",
+      "title": "Upscaler Image",
       "img": "/images/generator-img/upscaler.png",
       "menuId": "upscaler",
       "text": "Upscaler",
@@ -203,21 +179,18 @@
       "link": "/upscaler",
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Increases image resolution and quality"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Enhances details in low-resolution images"
         },
         {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
+          "text": "Allows printing or using images in larger formats"
         }
       ]
     },
     {
-      "title": "QR Code Generator AI refers to artificial intelligence.",
+      "title": "QR Code Generator",
       "img": "/images/generator-img/qr-code-generator.png",
       "menuId": "qr-code-generator",
       "text": "QR Code Generator",
@@ -227,21 +200,18 @@
       "link": "/qr-code-generator",
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Creates QR codes instantly"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Links information to websites, contacts, or locations"
         },
         {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
+          "text": "Facilitates quick digital information sharing"
         }
       ]
     },
     {
-      "title": "Image Search Engine AI refers to artificial intelligence.",
+      "title": "Image Search Engine",
       "img": "/images/generator-img/search-image-engine.png",
       "menuId": "image-search-engine",
       "text": "Image Search Engine",
@@ -251,16 +221,13 @@
       "link": "/image-search-engine",
       "subItem": [
         {
-          "text": "Transformer Models"
+          "text": "Searches for similar images on the internet"
         },
         {
-          "text": "Conditional Generative Models"
+          "text": "Finds high-resolution versions"
         },
         {
-          "text": "Pre-trained Models"
-        },
-        {
-          "text": "Variational Autoencoders"
+          "text": "Helps identify image origin or context"
         }
       ]
     }

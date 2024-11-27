@@ -11,7 +11,7 @@ const SmallNav = () => {
   return (
     <>
       <nav className="mainmenu-nav">
-        <ul className="dashboard-mainmenu rbt-default-sidebar-list">
+        {/* <ul className="dashboard-mainmenu rbt-default-sidebar-list">
           <li>
             <Link href="/dashboard">
               <i className="feather-monitor"></i>
@@ -24,8 +24,8 @@ const SmallNav = () => {
               <span>Manage Subsription</span>
             </Link>
           </li>
-        </ul>
-        <div className="rbt-sm-separator"></div>
+        </ul> */}
+        {/* <div className="rbt-sm-separator"></div>
         <ul className="dashboard-mainmenu rbt-default-sidebar-list">
           {SmallNavItem &&
             SmallNavItem.smallNavItem.slice(0, 7).map((data, index) => (
@@ -57,7 +57,7 @@ const SmallNav = () => {
                 </Link>
               </li>
             ))}
-        </ul>
+        </ul> */}
         <div className="rbt-sm-separator"></div>
         <div className="mainmenu-nav">
           <ul className="dashboard-mainmenu rbt-default-sidebar-list">
@@ -76,21 +76,19 @@ const SmallNav = () => {
               <div className="collapse" id="collapseExampleMenu">
                 <ul className="submenu rbt-default-sidebar-list">
                   {SmallNavItem &&
-                    SmallNavItem.smallNavItem
-                      .slice(7, 14)
-                      .map((data, index) => (
-                        <li key={index}>
-                          <Link href={data.link}>
-                            <i className={`feather-${data.icon}`}></i>
-                            <span>{data.text}</span>
-                          </Link>
-                        </li>
-                      ))}
+                    SmallNavItem.smallNavItem.slice(7, 9).map((data, index) => (
+                      <li key={index}>
+                        <Link href={data.link}>
+                          <i className={`feather-${data.icon}`}></i>
+                          <span>{data.text}</span>
+                        </Link>
+                      </li>
+                    ))}
                 </ul>
               </div>
             </li>
             <li>
-              <a href="#">
+              <a href="/help">
                 <i className="feather-award"></i>
                 <span>Help & FAQ</span>
               </a>
@@ -99,12 +97,12 @@ const SmallNav = () => {
 
           <div className="rbt-sm-separator"></div>
           <ul className="dashboard-mainmenu rbt-default-sidebar-list">
-            <li>
+            {/* <li>
               <Link href="/release-notes">
                 <i className="feather-bell"></i>
                 <span>Release notes</span>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/terms-policy">
                 <i className="feather-briefcase"></i>

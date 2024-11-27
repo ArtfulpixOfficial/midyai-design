@@ -285,7 +285,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="rainbow-service-area rainbow-section-gap">
+      <div
+        className="rainbow-service-area rainbow-section-gap"
+        id="all-tools-in-one"
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -360,7 +363,7 @@ const Home = () => {
                 <h2 className="title mb--20">All tools within one</h2>
                 <Link
                   className="btn-default btn-large color-blacked"
-                  href="/contact"
+                  href="#all-tools-in-one"
                 >
                   Try It Now{" "}
                   <i className="fa-sharp fa-light fa-arrow-right ml--5"></i>

@@ -109,18 +109,6 @@
           "isComing": false
         },
         {
-          "link": "/blog",
-          "text": "Blog",
-          "badge": "",
-          "isComing": false
-        },
-        {
-          "link": "/blog-detail",
-          "text": "Blog Details",
-          "badge": "",
-          "isComing": false
-        },
-        {
           "link": "/pricing",
           "text": "Pricing",
           "badge": "",
@@ -308,7 +296,6 @@
       "badge": "Coming",
       "icon": ""
     },
-
     {
       "link": "/profile-details",
       "isDisable": false,
@@ -318,52 +305,12 @@
       "icon": "user"
     },
     {
-      "link": "/notification",
-      "isDisable": false,
-      "type": "setting",
-      "text": "Notification",
-      "badge": "",
-      "icon": "shopping-bag"
-    },
-    {
-      "link": "/chat-export",
-      "isDisable": false,
-      "type": "setting",
-      "text": "Chat Export",
-      "badge": "",
-      "icon": "users"
-    },
-    {
-      "link": "/appearance",
-      "isDisable": false,
-      "type": "setting",
-      "text": "Apperance",
-      "badge": "",
-      "icon": "home"
-    },
-    {
       "link": "/plans-billing",
       "isDisable": false,
       "type": "setting",
       "text": "Plans and Billing",
       "badge": "",
       "icon": "briefcase"
-    },
-    {
-      "link": "/sessions",
-      "isDisable": false,
-      "type": "setting",
-      "text": "Sessions",
-      "badge": "",
-      "icon": "users"
-    },
-    {
-      "link": "/application",
-      "isDisable": false,
-      "type": "setting",
-      "text": "Application",
-      "badge": "",
-      "icon": "list"
     }
   ],
   "toolsItem": [

@@ -35,7 +35,7 @@ const ContactForm = () => {
               id="bio1"
               cols="20"
               rows="5"
-              placeholder="I'm the Front-End Developer for #Rainbow IT in Bangladesh, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."
+              placeholder="I'm the Front-End Developer in Bangladesh, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."
             ></textarea>
           </div>
         </div>
