@@ -2,7 +2,7 @@
 
 import React from "react";
 import Context from "@/context/Context";
-
+import { useSearchParams } from "next/navigation";
 import PopupMobileMenu from "@/components/Header/PopUpMobileMenu";
 import BackToTop from "../backToTop";
 import LeftDashboardSidebar from "@/components/Header/LeftDashboardSidebar";
@@ -13,6 +13,8 @@ import StaticbarDashboard from "@/components/Common/StaticBarDashboard";
 import ImageGenerator from "@/components/ImageGenerator/ImageGenerator";
 
 const ChatAssistantsPage = () => {
+  const searchParams = useSearchParams();
+  const id = searchParams.get("id");
   return (
     <>
       <main className="page-wrapper rbt-dashboard-page">

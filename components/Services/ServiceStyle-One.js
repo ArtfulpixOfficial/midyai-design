@@ -82,12 +82,13 @@ const ServiceStyleOne = () => {
                         <div className="description centered-shape">
                           <h5 className="title">{data.title}</h5>
                           <p className="desc">{data.desc}</p>
-                          <Link className="read-more-btn" href="#">
-                            Explore More{" "}
-                            <span>
-                              <i className="fa-sharp fa-solid fa-arrow-right"></i>
-                            </span>
-                          </Link>
+                          <a
+                            className="btn-default px-3 fs-4"
+                            href={data.link}
+                            target="_blank"
+                          >
+                            {data.title}
+                          </a>
                         </div>
                       </div>
                       <div className="bg-shaped">
