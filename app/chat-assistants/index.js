@@ -15,29 +15,18 @@ import ImageGenerator from "@/components/ImageGenerator/ImageGenerator";
 const ChatAssistantsPage = () => {
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
+
+  console.log(id);
   return (
     <>
       <main className="page-wrapper rbt-dashboard-page">
         <div className="rbt-panel-wrapper">
           <Context>
-            {/* <LeftDashboardSidebar /> */}
             <HeaderDashboard display="" />
-            {/* <RightDashboardSidebar /> */}
+
             <Modal />
             <PopupMobileMenu />
 
-            {/* <div className="rbt-main-content">
-              <div className="rbt-daynamic-page-content">
-                <div className="rbt-dashboard-content">
-                  <div className="content-page">
-                    <div className="chat-box-section">
-                      <ImageGenerator />
-                      <StaticbarDashboard />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
             <div
               className="iframe-container mt--95"
               style={{
@@ -47,7 +36,11 @@ const ChatAssistantsPage = () => {
               }}
             >
               <iframe
-                src="https://midyai-assistant.vercel.app/"
+                src={
+                  !id
+                    ? "https://midyai-assistant.vercel.app/"
+                    : `https://midyai-assistant.vercel.app/assistant/${id}`
+                }
                 width="100%"
                 height="100%"
                 frameBorder="0"

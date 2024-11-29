@@ -82,13 +82,16 @@ const ServiceStyleOne = () => {
                         <div className="description centered-shape">
                           <h5 className="title">{data.title}</h5>
                           <p className="desc">{data.desc}</p>
-                          <a
-                            className="btn-default px-3 fs-4"
-                            href={data.link}
-                            target="_blank"
+
+                          <Link
+                            className="btn-default d-inline-flex gap-2 align-items-center"
+                            href={`/chat-assistants?id=${data.link}`}
                           >
                             {data.title}
-                          </a>
+                            <span>
+                              <i className="fa-sharp fa-solid fa-arrow-right"></i>
+                            </span>
+                          </Link>
                         </div>
                       </div>
                       <div className="bg-shaped">
