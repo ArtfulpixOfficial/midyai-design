@@ -84,13 +84,13 @@ const ServiceStyleOne = () => {
                           <p className="desc">{data.desc}</p>
 
                           <Link
-                            className="btn-default d-inline-flex gap-2 align-items-center"
+                            className="btn-default"
                             href={`/chat-assistants?id=${data.link}`}
                           >
-                            {data.title}
-                            <span>
+                            Talk with {data.title}
+                            {/* <span>
                               <i className="fa-sharp fa-solid fa-arrow-right"></i>
-                            </span>
+                            </span> */}
                           </Link>
                         </div>
                       </div>
