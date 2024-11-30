@@ -2,8 +2,8 @@ import BackToTop from "../backToTop";
 import PricingPage from "./index";
 
 export const metadata = {
-  title: "Pricing - || AiWave - AI SaaS Website NEXTJS14 UI Kit",
-  description: "AiWave - AI SaaS Website NEXTJS14 UI Kit",
+  title: "MidyAI Design Pricing",
+  description: "MidyAI Design Pricing",
 };
 
 const PricingLayout = () => {

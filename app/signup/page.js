@@ -2,8 +2,8 @@ import BackToTop from "../backToTop";
 import SignupPage from "./index";
 
 export const metadata = {
-  title: "Sign Up - || AiWave - AI SaaS Website NEXTJS14 UI Kit",
-  description: "AiWave - AI SaaS Website NEXTJS14 UI Kit",
+  title: "MidyAI Design Sign Up",
+  description: "MidyAI Design Sign Up",
 };
 
 const SignupLayout = () => {

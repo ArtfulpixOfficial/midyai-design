@@ -2,8 +2,8 @@ import BackToTop from "../backToTop";
 import QRCodeGeneratorPage from "./index";
 
 export const metadata = {
-  title: "Image Generator - || AiWave - AI SaaS Website NEXTJS14 UI Kit",
-  description: "AiWave - AI SaaS Website NEXTJS14 UI Kit",
+  title: "MidyAI Design QR Code Generator",
+  description: "MidyAI Design QR Code Generator",
 };
 
 const QRCodeGeneratorLayout = () => {

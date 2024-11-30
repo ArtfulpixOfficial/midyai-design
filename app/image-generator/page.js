@@ -2,8 +2,8 @@ import BackToTop from "../backToTop";
 import ImageGeneratorPage from "./index";
 
 export const metadata = {
-  title: "Image Generator - || AiWave - AI SaaS Website NEXTJS14 UI Kit",
-  description: "AiWave - AI SaaS Website NEXTJS14 UI Kit",
+  title: "MidyAI Design Image Generator",
+  description: "MidyAI Design Image Generator",
 };
 
 const ImageGeneratorLayout = () => {

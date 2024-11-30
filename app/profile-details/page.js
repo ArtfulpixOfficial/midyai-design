@@ -2,8 +2,8 @@ import BackToTop from "../backToTop";
 import ProfileDetailsPage from "./index";
 
 export const metadata = {
-  title: "Profile Details - || AiWave - AI SaaS Website NEXTJS14 UI Kit",
-  description: "AiWave - AI SaaS Website NEXTJS14 UI Kit",
+  title: "MidyAI Design Profile Details",
+  description: "MidyAI Design Profile Details",
 };
 
 const ProfileDetailsLayout = () => {

@@ -1,8 +1,8 @@
 import HomePage from "./index";
 
 export const metadata = {
-  title: "Home - || AiWave - AI SaaS Website NEXTJS14 UI Kit",
-  description: "AiWave - AI SaaS Website NEXTJS14 UI Kit",
+  title: "MidyAI Design Home",
+  description: "MidyAI Design Home",
 };
 
 const HomePageLayout = () => {

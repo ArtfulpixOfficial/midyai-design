@@ -2,8 +2,8 @@ import BackToTop from "../backToTop";
 import PrivacyPolicyPage from "./index";
 
 export const metadata = {
-  title: "Privacy Policy - || AiWave - AI SaaS Website NEXTJS14 UI Kit",
-  description: "AiWave - AI SaaS Website NEXTJS14 UI Kit",
+  title: "MidyAI Design Privacy Policy",
+  description: "MidyAI Design Privacy Policy",
 };
 
 const PrivacyPolicyLayout = () => {

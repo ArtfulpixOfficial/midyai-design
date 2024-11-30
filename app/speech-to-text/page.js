@@ -2,8 +2,8 @@ import BackToTop from "../backToTop";
 import SpeechToTextPage from "./index";
 
 export const metadata = {
-  title: "Image Generator - || AiWave - AI SaaS Website NEXTJS14 UI Kit",
-  description: "AiWave - AI SaaS Website NEXTJS14 UI Kit",
+  title: "MidyAI Design Speech To Text",
+  description: "MidyAI Design Speech To Text",
 };
 
 const SpeechToTextLayout = () => {

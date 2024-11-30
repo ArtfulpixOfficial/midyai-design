@@ -2,8 +2,8 @@ import BackToTop from "../backToTop";
 import ChatAssistantsPage from "./index";
 
 export const metadata = {
-  title: "Image Generator - || AiWave - AI SaaS Website NEXTJS14 UI Kit",
-  description: "AiWave - AI SaaS Website NEXTJS14 UI Kit",
+  title: "MidyAI Design Chat Assistants",
+  description: "MidyAI Design Chat Assistants",
 };
 
 const ChatAssistantsLayout = () => {
