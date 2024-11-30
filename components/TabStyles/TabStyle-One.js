@@ -1,18 +1,31 @@
 import Link from "next/link";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 
 import TabData from "../../data/tabStyle.json";
 
 const TabStyleOne = () => {
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     const bootstrap = require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  //     const tabTriggers = document.querySelectorAll(".nav-link");
+
+  //     tabTriggers.forEach((trigger) => {
+  //       trigger.addEventListener("click", () => {
+  //         const tabElement = new bootstrap.Tab(trigger);
+  //         tabElement.show();
+  //       });
+  //     });
+  //   }
+  // }, []);
   return (
     <>
       <div className="row row--30 align-items-center">
         <div className="col-lg-12">
-          <div className="rainbow-default-tab style-three generator-tab-defalt">
+          <div className="style-three generator-tab-defalt rainbow-default-tab">
             <ul className="nav nav-tabs tab-button" role="tablist">
               {TabData &&
-                TabData.TabStyleOne.map((data, index) => (
+                TabData.TabStyleOne.map((data, index, arr) => (
                   <li
                     className="nav-item tabs__tab "
                     role="presentation"
