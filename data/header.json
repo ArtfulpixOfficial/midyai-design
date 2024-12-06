@@ -61,7 +61,7 @@
         },
         {
           "link": "/graphic-editor",
-          "isDisable": true,
+          "isDisable": false,
           "title": "Graphic editor",
           "badge": ""
         },

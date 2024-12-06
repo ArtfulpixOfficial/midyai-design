@@ -134,7 +134,7 @@
       "target": "graphic-editor-pane",
       "iconImg": "/images/icons/graphic-editor.png",
       "isSelect": false,
-      "link": "#",
+      "link": "/graphic-editor",
       "subItem": [
         {
           "text": "Allows editing and manipulating images with advanced tools"
