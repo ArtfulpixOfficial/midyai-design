@@ -1,10 +1,6 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
-
+import { useEffect } from "react";
 import sal from "sal.js";
-
-const ImageGenerator = () => {
+function ChatAssistants({ id }) {
   useEffect(() => {
     sal();
   }, []);
@@ -18,15 +14,19 @@ const ImageGenerator = () => {
       }}
     >
       <iframe
-        src="https://midyaisdxl.netlify.app/"
+        src={
+          !id
+            ? "https://midyai-assistant.vercel.app/"
+            : `https://midyai-assistant.vercel.app/assistant/${id}`
+        }
         width="100%"
         height="100%"
         frameBorder="0"
         allowFullScreen
-        title="Midy AI SDXL App"
+        title="Midy AI Chat Assistants App"
       />
     </div>
   );
-};
+}
 
-export default ImageGenerator;
+export default ChatAssistants;

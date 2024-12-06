@@ -36,23 +36,7 @@ const ImageGeneratorPage = () => {
                 </div>
               </div>
             </div> */}
-            <div
-              className="iframe-container mt--95"
-              style={{
-                width: "100%",
-                height: "800px",
-                border: "none",
-              }}
-            >
-              <iframe
-                src="https://midyaisdxl.netlify.app/"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                allowFullScreen
-                title="Midy AI SDXL App"
-              />
-            </div>
+            <ImageGenerator />
             <BackToTop />
           </Context>
         </div>

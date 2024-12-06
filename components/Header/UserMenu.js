@@ -3,8 +3,17 @@ import Link from "next/link";
 
 import avatar from "../../public/images/team/team-01sm.jpg";
 import UserMenuItems from "./HeaderProps/UserMenuItem";
-
+import { useAuthContext } from "@/context/AuthContext";
+import { useRouter } from "next/navigation";
+import { signOutUser } from "@/utilities/supabaseAuth";
 const UserMenu = () => {
+  const { userDetails } = useAuthContext();
+  const router = useRouter();
+  const onSignOut = async () => {
+    console.log("hello from logout");
+    await signOutUser();
+  };
+  console.log(userDetails);
   return (
     <>
       <div className="inner">
@@ -41,10 +50,15 @@ const UserMenu = () => {
         <hr className="mt--10 mb--10" />
         <ul className="user-list-wrapper">
           <li>
-            <Link href="/signup">
+            <a
+              onClick={onSignOut}
+              style={{
+                cursor: "pointer",
+              }}
+            >
               <i className="fa-sharp fa-solid fa-right-to-bracket"></i>
               <span>Logout</span>
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

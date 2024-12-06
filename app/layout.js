@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { Sora } from "@next/font/google";
-
+import AuthContext from "@/context/AuthContext";
 import "bootstrap/scss/bootstrap.scss";
 
 // ========= Plugins CSS START =========
@@ -12,13 +12,13 @@ import "../public/css/plugins/animation.css";
 import "../node_modules/sal.js/dist/sal.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-  import "react-tooltip/dist/react-tooltip.css";
+import "react-tooltip/dist/react-tooltip.css";
 // ========= Plugins CSS END =========
 
 const sora = Sora({
-  subsets:['latin'],
-  weight:['100','200','300','400','500','600','700','800'],
-})
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+});
 
 import "../public/scss/style.scss";
 
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={sora.className} suppressHydrationWarning={true}>
-        {children}
+        <AuthContext>{children}</AuthContext>
       </body>
     </html>
   );

@@ -6,11 +6,12 @@ import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 
 import { useAppContext } from "@/context/Context";
-
+import { useAuthContext } from "@/context/AuthContext";
 import logo from "../../public/images/logo/logo.png";
 import Nav from "./Nav";
 
 const Header = ({ headerTransparent, headerSticky, btnClass }) => {
+  const { isAuthenticated } = useAuthContext();
   const router = useRouter();
   const pathname = usePathname();
   const { activeMobileMenu, setActiveMobileMenu } = useAppContext();
@@ -68,7 +69,10 @@ const Header = ({ headerTransparent, headerSticky, btnClass }) => {
             <div className="col-lg-2 col-md-6 col-6 position-static">
               <div className="header-right">
                 <div className="header-btn">
-                  <Link className={`${btnClass}`} href="/image-generator">
+                  <Link
+                    className={`${btnClass}`}
+                    href={isAuthenticated ? "/image-generator" : "/signin"}
+                  >
                     <span>Get Start</span>
                   </Link>
                 </div>

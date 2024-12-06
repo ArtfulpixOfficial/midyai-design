@@ -3,8 +3,9 @@
 import React, { useEffect, useState } from "react";
 
 import PricingData from "../../data/pricing.json";
-
+import { useAuthContext } from "@/context/AuthContext";
 const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
+  const { isAuthenticated } = useAuthContext();
   const [sectionStates, setSectionStates] = useState({
     Premium: true,
     Enterprise: true,
@@ -106,7 +107,7 @@ const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
                                   ? "color-blacked"
                                   : "btn-border"
                               }`}
-                              href="#"
+                              href={!isAuthenticated ? "/signin" : "#"}
                             >
                               Buy Plan
                             </a>

@@ -1,13 +1,37 @@
+"use client";
+import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import { useState } from "react";
 import logo from "../../public/images/logo/logo.png";
 import userImg from "../../public/images/team/team-02sm.jpg";
 import brandImg from "../../public/images/brand/brand-t.png";
 import google from "../../public/images/sign-up/google.png";
 import facebook from "../../public/images/sign-up/facebook.png";
 import bgImg from "../../public/images/bg/signin-signup-background.png";
+import { signInUser } from "@/utilities/supabaseAuth";
+
+import { useAuthContext } from "@/context/AuthContext";
+import { useRouter } from "next/navigation";
 const SigninPage = () => {
+  const router = useRouter();
+  const { isAuthenticated, login } = useAuthContext();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  useEffect(() => {
+    if (isAuthenticated) {
+      router.push("/home");
+    }
+  }, [isAuthenticated]);
+  console.log(isAuthenticated);
+
+  const onSubmitSignIn = async (e) => {
+    e.preventDefault();
+    if (!email || !password) return;
+    const res = await signInUser(email, password);
+    console.log(res);
+    login(res);
+  };
   return (
     <>
       <main className="page-wrapper">
@@ -26,7 +50,7 @@ const SigninPage = () => {
                   </div>
                   <div className="signup-box-bottom">
                     <div className="signup-box-content">
-                      <div className="social-btn-grp justify-content-center">
+                      {/* <div className="social-btn-grp justify-content-center">
                         <a className="btn-default btn-border" href="#">
                           <span className="icon-left">
                             <Image
@@ -38,24 +62,14 @@ const SigninPage = () => {
                           </span>
                           Login with Google
                         </a>
-                        {/* <a className="btn-default btn-border" href="#">
-                          <span className="icon-left">
-                            <Image
-                              src={facebook}
-                              width={18}
-                              height={18}
-                              alt="Facebook Icon"
-                            />
-                          </span>
-                          Login with Facebook
-                        </a> */}
-                      </div>
-                      <div className="text-social-area">
+                       
+                      </div> */}
+                      {/* <div className="text-social-area">
                         <hr />
                         <span>Or continue with</span>
                         <hr />
-                      </div>
-                      <form>
+                      </div> */}
+                      <form onSubmit={onSubmitSignIn}>
                         <div className="input-section mail-section">
                           <div className="icon">
                             <i className="fa-sharp fa-regular fa-envelope"></i>
@@ -63,13 +77,20 @@ const SigninPage = () => {
                           <input
                             type="email"
                             placeholder="Enter email address"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                           />
                         </div>
                         <div className="input-section password-section">
                           <div className="icon">
                             <i className="fa-sharp fa-regular fa-lock"></i>
                           </div>
-                          <input type="password" placeholder="Password" />
+                          <input
+                            type="password"
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                          />
                         </div>
                         <div className="forget-text">
                           <a className="btn-read-more" href="#">
@@ -93,7 +114,7 @@ const SigninPage = () => {
                 </div>
               </div>
               <div className="col-lg-6 right-wrapper align-items-stretch px-0">
-                <Image src={bgImg} width={800} />
+                <Image src={bgImg} width={800} alt="ai-generated-astronaut" />
                 {/* <div className="client-feedback-area">
                   <div className="single-feedback">
                     <div className="inner">

@@ -1,13 +1,41 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-
+import { useEffect, useState } from "react";
 import logo from "../../public/images/logo/logo.png";
 import userImg from "../../public/images/team/team-02sm.jpg";
 import brandImg from "../../public/images/brand/brand-t.png";
 import google from "../../public/images/sign-up/google.png";
 import facebook from "../../public/images/sign-up/facebook.png";
 import bgImg from "../../public/images/bg/signin-signup-background.png";
+import { signUpNewUser } from "@/utilities/supabaseAuth";
+import { useAuthContext } from "@/context/AuthContext";
+import { useRouter } from "next/navigation";
 const SignupPage = () => {
+  const { isAuthenticated, userDetails, login, sessionDetails } =
+    useAuthContext();
+  const [userName, setUserName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const router = useRouter();
+  useEffect(() => {
+    if (isAuthenticated) {
+      router.push("/home");
+    }
+  }, [isAuthenticated]);
+  const onSignupClick = async (e) => {
+    e.preventDefault();
+    if (!email || !userName || !password || !confirmPassword) return;
+    if (password !== confirmPassword) return;
+    if (password.length <= 3) return;
+    const res = await signUpNewUser(email, password);
+    console.log(res);
+    login(res);
+  };
+
+  console.log(isAuthenticated);
   return (
     <>
       <main className="page-wrapper">
@@ -26,7 +54,7 @@ const SignupPage = () => {
                   </div>
                   <div className="signup-box-bottom">
                     <div className="signup-box-content">
-                      <div className="social-btn-grp justify-content-center">
+                      {/* <div className="social-btn-grp justify-content-center">
                         <a className="btn-default btn-border" href="#">
                           <span className="icon-left">
                             <Image
@@ -38,29 +66,24 @@ const SignupPage = () => {
                           </span>
                           Login with Google
                         </a>
-                        {/* <a className="btn-default btn-border" href="#">
-                          <span className="icon-left">
-                            <Image
-                              src={facebook}
-                              width={18}
-                              height={18}
-                              alt="Facebook Icon"
-                            />
-                          </span>
-                          Login with Facebook
-                        </a> */}
+                    
                       </div>
                       <div className="text-social-area">
                         <hr />
                         <span>Or continue with</span>
                         <hr />
-                      </div>
-                      <form>
+                      </div> */}
+                      <form onSubmit={onSignupClick}>
                         <div className="input-section">
                           <div className="icon">
                             <i className="feather-user"></i>
                           </div>
-                          <input type="text" placeholder="Enter Your Name" />
+                          <input
+                            type="text"
+                            placeholder="Enter Your Name"
+                            value={userName}
+                            onChange={(e) => setUserName(e.target.value)}
+                          />
                         </div>
                         <div className="input-section mail-section">
                           <div className="icon">
@@ -69,6 +92,8 @@ const SignupPage = () => {
                           <input
                             type="email"
                             placeholder="Enter email address"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                           />
                         </div>
                         <div className="input-section password-section">
@@ -78,6 +103,8 @@ const SignupPage = () => {
                           <input
                             type="password"
                             placeholder="Create Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
                           />
                         </div>{" "}
                         <div className="input-section password-section">
@@ -87,13 +114,15 @@ const SignupPage = () => {
                           <input
                             type="password"
                             placeholder="Confirm Password"
+                            value={confirmPassword}
+                            onChange={(e) => setConfirmPassword(e.target.value)}
                           />
                         </div>
-                        <div className="forget-text">
+                        {/* <div className="forget-text">
                           <a className="btn-read-more" href="#">
                             <span>Forgot password</span>
                           </a>
-                        </div>
+                        </div> */}
                         <button type="submit" className="btn-default">
                           Sign Up
                         </button>
@@ -111,61 +140,7 @@ const SignupPage = () => {
                 </div>
               </div>
               <div className="col-lg-6 right-wrapper align-items-stretch justify-content-stretch px-0">
-                <Image src={bgImg} width={1200} />
-                {/* <div className="client-feedback-area">
-                  <div className="single-feedback">
-                    <div className="inner">
-                      <div className="meta-img-section">
-                        <a className="image" href="#">
-                          <Image
-                            src={userImg}
-                            width={93}
-                            height={93}
-                            alt="User Image"
-                          />
-                        </a>
-                      </div>
-                      <div className="rating">
-                        <a href="#rating">
-                          <i className="fa-sharp fa-solid fa-star"></i>
-                        </a>
-                        <a href="#rating">
-                          <i className="fa-sharp fa-solid fa-star"></i>
-                        </a>
-                        <a href="#rating">
-                          <i className="fa-sharp fa-solid fa-star"></i>
-                        </a>
-                        <a href="#rating">
-                          <i className="fa-sharp fa-solid fa-star"></i>
-                        </a>
-                        <a href="#rating">
-                          <i className="fa-sharp fa-solid fa-star"></i>
-                        </a>
-                      </div>
-                      <div className="content">
-                        <p className="description">
-                          Rainbow-Themes is now a crucial component of our work!
-                          We made it simple to collaborate across departments by
-                          grouping our work
-                        </p>
-                        <div className="bottom-content">
-                          <div className="meta-info-section">
-                            <h4 className="title-text mb--0">Guy Hawkins</h4>
-                            <p className="desc mb--20">Nursing Assistant</p>
-                            <div className="desc-img">
-                              <Image
-                                src={brandImg}
-                                width={83}
-                                height={23}
-                                alt="Brand Image"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
+                <Image src={bgImg} width={1200} alt="ai-made-astronaut" />
               </div>
             </div>
           </div>

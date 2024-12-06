@@ -9,8 +9,9 @@ import avatar from "../../public/images/team/team-01sm.jpg";
 
 import Nav from "./Nav";
 import UserMenu from "./UserMenu";
-
+import { useAuthContext } from "@/context/AuthContext";
 const HeaderDashboard = ({ display }) => {
+  const { userDetails } = useAuthContext();
   const {
     mobile,
     setMobile,
@@ -69,27 +70,29 @@ const HeaderDashboard = ({ display }) => {
                   </div>
                 </div>
 
-                <div className="rbt-admin-panel account-access rbt-user-wrapper right-align-dropdown">
-                  <div className="rbt-admin-card grid-style">
-                    <a className="d-flex align-items-center" href="#">
-                      <div className="inner d-flex align-items-center">
-                        <div className="img-box">
-                          <Image src={avatar} alt="Admin" />
+                {userDetails && (
+                  <div className="rbt-admin-panel account-access rbt-user-wrapper right-align-dropdown">
+                    <div className="rbt-admin-card grid-style">
+                      <a className="d-flex align-items-center" href="#">
+                        <div className="inner d-flex align-items-center">
+                          <div className="img-box">
+                            <Image src={avatar} alt="Admin" />
+                          </div>
+                          <div className="content">
+                            <span className="title ">Rafi Dev</span>
+                            <p>{userDetails.email}</p>
+                          </div>
                         </div>
-                        <div className="content">
-                          <span className="title ">Rafi Dev</span>
-                          <p>adam@gmail.com</p>
+                        <div className="icon">
+                          <i className="fa-sharp fa-solid fa-chevron-down"></i>
                         </div>
-                      </div>
-                      <div className="icon">
-                        <i className="fa-sharp fa-solid fa-chevron-down"></i>
-                      </div>
-                    </a>
+                      </a>
+                    </div>
+                    <div className="rbt-user-menu-list-wrapper">
+                      <UserMenu />
+                    </div>
                   </div>
-                  <div className="rbt-user-menu-list-wrapper">
-                    <UserMenu />
-                  </div>
-                </div>
+                )}
 
                 {/* <div className={`expand-btn-grp ${display}`}>
                   <button

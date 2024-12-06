@@ -6,5 +6,6 @@ logs
 .vscode
 .idea
 .next
+.env
 yarn-error.log
 npm-debug.log
