@@ -4,6 +4,20 @@ import ImageGeneratorPage from "./index";
 export const metadata = {
   title: "MidyAI Design Image Generator",
   description: "MidyAI Design Image Generator",
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/images/logo/icon-light.ico",
+        href: "/images/logo/icon-light.ico",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/images/logo/icon-dark.ico",
+        href: "/images/logo/icon-dark.ico",
+      },
+    ],
+  },
 };
 
 const ImageGeneratorLayout = () => {

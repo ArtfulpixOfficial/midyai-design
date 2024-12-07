@@ -2,8 +2,22 @@ import BackToTop from "./backToTop";
 import HomePage from "./home/page";
 
 export const metadata = {
-  title: "Home - || AiWave - AI SaaS Website NEXTJS14 UI Kit",
-  description: "AiWave - AI SaaS Website NEXTJS14 UI Kit",
+  title: "MidyAI Design Home",
+  description: "MidyAI Design Home",
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/images/logo/icon-light.ico",
+        href: "/images/logo/icon-light.ico",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/images/logo/icon-dark.ico",
+        href: "/images/logo/icon-dark.ico",
+      },
+    ],
+  },
 };
 
 export default function Home() {

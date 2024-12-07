@@ -2,6 +2,8 @@
 
 import React, { useEffect } from "react";
 import { Sora } from "@next/font/google";
+import Head from "next/head";
+
 import AuthContext from "@/context/AuthContext";
 import "bootstrap/scss/bootstrap.scss";
 
