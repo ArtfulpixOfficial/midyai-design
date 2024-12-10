@@ -24,7 +24,7 @@ const SigninLayout = () => {
   return (
     <>
       <SigninPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

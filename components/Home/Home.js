@@ -53,7 +53,7 @@ const Home = () => {
       >
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-12">
+            <div className="col-6 col-lg-12">
               <div className="inner mt--140">
                 <h1 className="title text-center display-one">
                   Discover the Potential of

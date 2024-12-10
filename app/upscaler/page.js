@@ -24,7 +24,7 @@ const UpscalerLayout = () => {
   return (
     <>
       <UpscalerPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

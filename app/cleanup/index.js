@@ -53,7 +53,7 @@ const CleanupPage = () => {
                 title="Midy AI Image Cleanup"
               />
             </div>
-            <BackToTop />
+            {/* <BackToTop /> */}
           </Context>
         </div>
       </main>

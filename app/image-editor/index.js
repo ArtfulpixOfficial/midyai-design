@@ -37,7 +37,7 @@ const ImageEditorPage = () => {
               </div>
             </div>
 
-            <BackToTop />
+            {/* <BackToTop /> */}
           </Context>
         </div>
       </main>

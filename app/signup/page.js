@@ -24,7 +24,7 @@ const SignupLayout = () => {
   return (
     <>
       <SignupPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

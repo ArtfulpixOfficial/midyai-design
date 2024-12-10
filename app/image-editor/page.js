@@ -10,7 +10,7 @@ const ImageEditorLayout = () => {
   return (
     <>
       <ImageEditorPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

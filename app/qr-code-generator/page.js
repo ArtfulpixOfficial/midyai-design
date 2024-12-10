@@ -24,7 +24,7 @@ const QRCodeGeneratorLayout = () => {
   return (
     <>
       <QRCodeGeneratorPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

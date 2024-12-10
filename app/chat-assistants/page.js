@@ -24,7 +24,7 @@ const ChatAssistantsLayout = () => {
   return (
     <>
       <ChatAssistantsPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

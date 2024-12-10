@@ -79,7 +79,11 @@ const HeaderDashboard = ({ display }) => {
                             <Image src={avatar} alt="Admin" />
                           </div>
                           <div className="content">
-                            <span className="title ">Rafi Dev</span>
+                            {userDetails.user_metadata.displayName && (
+                              <span className="title ">
+                                {userDetails.user_metadata.displayName}
+                              </span>
+                            )}
                             <p>{userDetails.email}</p>
                           </div>
                         </div>

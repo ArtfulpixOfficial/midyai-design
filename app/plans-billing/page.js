@@ -24,7 +24,7 @@ const PlansBillingLayout = () => {
   return (
     <>
       <PlansBillingPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

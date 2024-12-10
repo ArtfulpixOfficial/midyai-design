@@ -24,7 +24,7 @@ const PrivacyPolicyLayout = () => {
   return (
     <>
       <PrivacyPolicyPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

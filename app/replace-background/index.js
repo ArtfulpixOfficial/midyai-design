@@ -53,7 +53,7 @@ const ReplaceBackgroundPage = () => {
                 title="Midy AI Chat Assistants App"
               />
             </div>
-            <BackToTop />
+            {/* <BackToTop /> */}
           </Context>
         </div>
       </main>

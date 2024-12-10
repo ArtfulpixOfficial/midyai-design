@@ -9,7 +9,7 @@ import brandImg from "../../public/images/brand/brand-t.png";
 import google from "../../public/images/sign-up/google.png";
 import facebook from "../../public/images/sign-up/facebook.png";
 import bgImg from "../../public/images/bg/signin-signup-background.png";
-import { signUpNewUser } from "@/utilities/supabaseAuth";
+import { insertUserData, signUpNewUser } from "@/utilities/supabaseAuth";
 import { useAuthContext } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 const SignupPage = () => {
@@ -30,8 +30,27 @@ const SignupPage = () => {
     if (!email || !userName || !password || !confirmPassword) return;
     if (password !== confirmPassword) return;
     if (password.length <= 3) return;
-    const res = await signUpNewUser(email, password);
+    const res = await signUpNewUser(email, password, userName);
     console.log(res);
+    if (!res.error) {
+      const {
+        id,
+        created_at,
+        email,
+        last_sign_in_at,
+        phone,
+        user_metadata: { displayName },
+      } = res.data.user;
+      insertUserData("midyaiUsers", {
+        id: id,
+        createdAt: created_at,
+        email,
+        isSuperAdmin: false,
+        lastSignedIn: last_sign_in_at,
+        phoneNumber: phone || null,
+        displayName: displayName || "",
+      });
+    }
     login(res);
   };
 

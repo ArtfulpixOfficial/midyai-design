@@ -53,7 +53,7 @@ const SpeechToTextPage = () => {
                 title="Midy AI Text to speech"
               />
             </div>
-            <BackToTop />
+            {/* <BackToTop /> */}
           </Context>
         </div>
       </main>

@@ -24,7 +24,7 @@ const TextToSpeechLayout = () => {
   return (
     <>
       <TextToSpeechPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

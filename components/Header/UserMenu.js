@@ -17,20 +17,24 @@ const UserMenu = () => {
   return (
     <>
       <div className="inner">
-        <div className="rbt-admin-profile">
-          <div className="admin-thumbnail">
-            <Image src={avatar} width={31} height={31} alt="User Images" />
+        {userDetails.user_metadata.displayName && (
+          <div className="rbt-admin-profile">
+            <div className="admin-thumbnail">
+              <Image src={avatar} width={31} height={31} alt="User Images" />
+            </div>
+            <div className="admin-info">
+              <span className="name">
+                {userDetails.user_metadata.displayName}
+              </span>
+              <Link
+                className="rbt-btn-link color-primary"
+                href="/profile-details"
+              >
+                View Profile
+              </Link>
+            </div>
           </div>
-          <div className="admin-info">
-            <span className="name">Rafi Dev</span>
-            <Link
-              className="rbt-btn-link color-primary"
-              href="/profile-details"
-            >
-              View Profile
-            </Link>
-          </div>
-        </div>
+        )}
         <UserMenuItems parentClass="user-list-wrapper user-nav" />
         <hr className="mt--10 mb--10" />
         <ul className="user-list-wrapper user-nav">

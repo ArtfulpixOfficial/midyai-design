@@ -21,7 +21,7 @@ const PlansBillingPage = () => {
             <PlansBilling />
           </div>
 
-          <BackToTop />
+          {/* <BackToTop /> */}
         </Context>
       </main>
     </>

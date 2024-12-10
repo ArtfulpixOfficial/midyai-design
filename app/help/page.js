@@ -24,7 +24,7 @@ const HelpFaqLayout = () => {
   return (
     <>
       <HelpFaqPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

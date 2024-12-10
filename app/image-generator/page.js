@@ -24,7 +24,7 @@ const ImageGeneratorLayout = () => {
   return (
     <>
       <ImageGeneratorPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

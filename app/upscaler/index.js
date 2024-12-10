@@ -53,7 +53,7 @@ const UpscalerPage = () => {
                 title="Midy AI Remove Background"
               />
             </div>
-            <BackToTop />
+            {/* <BackToTop /> */}
           </Context>
         </div>
       </main>

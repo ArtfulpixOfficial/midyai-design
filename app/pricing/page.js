@@ -24,7 +24,7 @@ const PricingLayout = () => {
   return (
     <>
       <PricingPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

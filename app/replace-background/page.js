@@ -24,7 +24,7 @@ const ReplaceBackgroundLayout = () => {
   return (
     <>
       <ReplaceBackgroundPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

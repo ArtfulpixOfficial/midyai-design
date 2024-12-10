@@ -115,6 +115,7 @@ const AuthContext = ({ children }) => {
       }
 
       if (event === "TOKEN_REFRESHED") {
+        console.log("Token Refreshed");
         login(authObj);
       }
 

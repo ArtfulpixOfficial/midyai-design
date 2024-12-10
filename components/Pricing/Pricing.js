@@ -4,8 +4,10 @@ import React, { useEffect, useState } from "react";
 
 import PricingData from "../../data/pricing.json";
 import { useAuthContext } from "@/context/AuthContext";
+import { useRouter } from "next/navigation";
 const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
   const { isAuthenticated } = useAuthContext();
+  const router = useRouter();
   const [sectionStates, setSectionStates] = useState({
     Premium: true,
     Enterprise: true,
@@ -16,6 +18,13 @@ const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
       ...prevState,
       [subTitle]: !prevState[subTitle],
     }));
+  };
+
+  const handleBuyPlanClick = function (paymentLink) {
+    if (!isAuthenticated) router.push("/signin");
+    else {
+      window.open(paymentLink, "_blank");
+    }
   };
 
   return (
@@ -100,17 +109,20 @@ const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
                               </div>
                             </div>
                           </div>
-                          <div className="pricing-footer">
-                            <a
-                              className={`btn-default ${
+                          <div className="pricing-footer d-flex justify-content-center">
+                            <button
+                              className={`btn-default w-100 ${
                                 innerData.isSelect
                                   ? "color-blacked"
                                   : "btn-border"
                               }`}
-                              href={!isAuthenticated ? "/signin" : "#"}
+                              onClick={() =>
+                                handleBuyPlanClick(innerData.paymentLink)
+                              }
+                              // href={!isAuthenticated ? "/signin" : "#"}
                             >
                               Buy Plan
-                            </a>
+                            </button>
                             {/* <p className="bottom-text">{innerData.limited}</p> */}
                           </div>
                         </div>

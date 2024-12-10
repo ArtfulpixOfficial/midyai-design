@@ -28,6 +28,7 @@ const PricingPage = () => {
   useEffect(() => {
     Sal();
   }, []);
+
   return (
     <>
       <main className="page-wrapper">
@@ -221,7 +222,7 @@ const PricingPage = () => {
             </div> */}
           </div>
 
-          <BackToTop />
+          {/* <BackToTop /> */}
           <Footer />
           {/* <Copyright /> */}
         </Context>

@@ -37,7 +37,7 @@ const ContactPage = () => {
             </div> */}
           </div>
 
-          <BackToTop />
+          {/* <BackToTop /> */}
           <Footer />
           {/* <Copyright /> */}
         </Context>

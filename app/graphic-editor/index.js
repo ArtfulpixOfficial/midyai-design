@@ -36,7 +36,7 @@ const GraphicEditorPage = () => {
               </div>
             </div> */}
             <GraphicEditor />
-            <BackToTop />
+            {/* <BackToTop /> */}
           </Context>
         </div>
       </main>

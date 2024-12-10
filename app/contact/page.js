@@ -24,7 +24,7 @@ const ContactLayout = () => {
   return (
     <>
       <ContactPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

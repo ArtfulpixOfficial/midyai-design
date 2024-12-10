@@ -24,7 +24,7 @@ const ImageSearchEngineLayout = () => {
   return (
     <>
       <ImageSearchEnginePage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

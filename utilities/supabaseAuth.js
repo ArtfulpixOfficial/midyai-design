@@ -5,10 +5,15 @@ const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 export const supabase = createClient(supabaseUrl, supabaseKey);
 
-export async function signUpNewUser(email, password) {
+export async function signUpNewUser(email, password, userName) {
   const { data, error } = await supabase.auth.signUp({
     email,
     password,
+    options: {
+      data: {
+        displayName: userName,
+      },
+    },
   });
 
   return { data, error };
@@ -27,6 +32,12 @@ export const refreshSession = async () => {
   return { data, error };
 };
 
+export async function insertUserData(tableName, userData) {
+  const { data, error } = await supabase
+    .from(tableName)
+    .insert([userData])
+    .select();
+}
 export async function signOutUser() {
   const {
     data: { session },

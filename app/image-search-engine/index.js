@@ -53,7 +53,7 @@ const ImageSearchEnginePage = () => {
                 title="Midy AI Image Search Engine"
               />
             </div>
-            <BackToTop />
+            {/* <BackToTop /> */}
           </Context>
         </div>
       </main>

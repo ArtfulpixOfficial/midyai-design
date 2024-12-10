@@ -24,7 +24,7 @@ const RemoveBackgroundLayout = () => {
   return (
     <>
       <RemoveBackgroundPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

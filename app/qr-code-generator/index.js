@@ -53,7 +53,7 @@ const QRCodeGeneratorPage = () => {
                 title="Midy AI QR Code Generator"
               />
             </div>
-            <BackToTop />
+            {/* <BackToTop /> */}
           </Context>
         </div>
       </main>

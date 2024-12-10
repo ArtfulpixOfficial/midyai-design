@@ -24,7 +24,7 @@ const GraphicEditorLayout = () => {
   return (
     <>
       <GraphicEditorPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

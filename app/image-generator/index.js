@@ -37,7 +37,7 @@ const ImageGeneratorPage = () => {
               </div>
             </div> */}
             <ImageGenerator />
-            <BackToTop />
+            {/* <BackToTop /> */}
           </Context>
         </div>
       </main>

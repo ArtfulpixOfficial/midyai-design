@@ -24,7 +24,7 @@ const CleanupLayout = () => {
   return (
     <>
       <CleanupPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

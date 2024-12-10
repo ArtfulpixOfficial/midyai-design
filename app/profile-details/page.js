@@ -24,7 +24,7 @@ const ProfileDetailsLayout = () => {
   return (
     <>
       <ProfileDetailsPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

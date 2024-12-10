@@ -28,7 +28,7 @@ const ChatAssistantsPage = () => {
             <Modal />
             <PopupMobileMenu />
             <ChatAssistants id={id} />
-            <BackToTop />
+            {/* <BackToTop /> */}
           </Context>
         </div>
       </main>

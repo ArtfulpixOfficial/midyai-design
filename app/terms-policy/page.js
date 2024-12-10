@@ -24,7 +24,7 @@ const TermsPolicyLayout = () => {
   return (
     <>
       <TermsPolicyPage />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </>
   );
 };

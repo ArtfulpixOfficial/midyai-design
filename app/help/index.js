@@ -20,7 +20,7 @@ const HelpFaqPage = () => {
 
             <Help />
           </div>
-          <BackToTop />
+          {/* <BackToTop /> */}
         </Context>
       </main>
     </>
