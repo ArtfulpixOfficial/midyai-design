@@ -4,12 +4,13 @@ function ChatAssistants({ id }) {
   useEffect(() => {
     sal();
   }, []);
+
   return (
     <div
       className="iframe-container mt--95"
       style={{
         width: "100%",
-        height: "800px",
+        height: "calc(100vh - 110px)",
         border: "none",
       }}
     >
