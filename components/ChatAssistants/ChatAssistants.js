@@ -7,10 +7,10 @@ function ChatAssistants({ id }) {
 
   return (
     <div
-      className="iframe-container mt--95"
+      className="iframe-container mt--95 chat-assistant-iframe"
       style={{
         width: "100%",
-        height: "calc(100vh - 110px)",
+        height: "calc(100vh - 160px)",
         border: "none",
       }}
     >
