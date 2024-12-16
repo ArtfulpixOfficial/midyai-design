@@ -6,23 +6,23 @@
           "title": "Social Media",
           "innerItem": [
             {
-              "link": "#",
+              "link": "https://www.facebook.com/share/KgQdfCU8A2Kog6r6/?mibextid=LQQJ4d",
               "text": "Facebook"
             },
             {
-              "link": "/blog",
+              "link": "https://x.com/Midyaidesign",
               "text": "Twitter"
             },
             {
-              "link": "/contact",
+              "link": "https://www.instagram.com/midyaidesign",
               "text": "Instagram"
             },
             {
-              "link": "/utilize",
+              "link": "https://www.youtube.com/@MidyAIDesign",
               "text": "YouTube"
             },
             {
-              "link": "/roadmap",
+              "link": "https://www.tiktok.com/@midyaidesign",
               "text": "TikTok"
             }
           ]
