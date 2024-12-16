@@ -29,8 +29,10 @@ import ServiceTwo from "../Services/Service-Two";
 import Testimonial from "../Testimonials/Testimonial";
 import BrandTwo from "../Brands/Brand-Two";
 import CtaTwo from "../CallToActions/Cta-Two";
-
+import { useAuthContext } from "@/context/AuthContext";
+import { getUserData } from "@/utilities/supabaseAuth";
 const Home = () => {
+  const { isAuthenticated, userDetails, setUserData } = useAuthContext();
   const [visibleIndex, setVisibleIndex] = useState(0);
 
   useEffect(() => {
@@ -44,6 +46,19 @@ const Home = () => {
       clearInterval(intervalId);
     };
   }, []);
+
+  // useEffect(() => {
+  //   if (isAuthenticated && userDetails.id) {
+  //     async function getUserDataFromdb() {
+  //       console.log(userDetails);
+  //       const userRes = await getUserData("midyaiUsers", userDetails.id);
+  //       if (userRes.error) return;
+  //       console.log(userRes);
+  //       setUserData(userRes.data[0]);
+  //     }
+  //     getUserDataFromdb();
+  //   }
+  // }, [userDetails, isAuthenticated]);
 
   return (
     <>

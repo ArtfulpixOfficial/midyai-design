@@ -9,7 +9,7 @@ import brandImg from "../../public/images/brand/brand-t.png";
 import google from "../../public/images/sign-up/google.png";
 import facebook from "../../public/images/sign-up/facebook.png";
 import bgImg from "../../public/images/bg/signin-signup-background.png";
-import { signInUser } from "@/utilities/supabaseAuth";
+import { getUserData, signInUser } from "@/utilities/supabaseAuth";
 
 import { useAuthContext } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
@@ -23,13 +23,14 @@ const SigninPage = () => {
       router.push("/home");
     }
   }, [isAuthenticated]);
-  console.log(isAuthenticated);
 
   const onSubmitSignIn = async (e) => {
     e.preventDefault();
     if (!email || !password) return;
     const res = await signInUser(email, password);
     console.log(res);
+    if (res.error) return;
+
     login(res);
   };
   return (

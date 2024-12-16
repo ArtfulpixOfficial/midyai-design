@@ -5,6 +5,7 @@ import {
   refreshSession,
   signOutUser,
   supabase,
+  getUserData,
 } from "@/utilities/supabaseAuth";
 export const CreateContext = createContext();
 
@@ -14,53 +15,7 @@ const AuthContext = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [userDetails, setUserDetails] = useState();
   const [sessionDetails, setSessionDetails] = useState();
-
-  // const restoreSession = async () => {
-  //   const storedAuthState = JSON.parse(localStorage.getItem("isAuthenticated"));
-  //   const storedUserDetails = JSON.parse(localStorage.getItem("userDetails"));
-  //   const storedSessionDetails = JSON.parse(
-  //     localStorage.getItem("sessionDetails")
-  //   );
-
-  //   if (!storedAuthState || !storedSessionDetails) return;
-
-  //   const { access_token, refresh_token, expires_at } = storedSessionDetails;
-  //   const currentTime = Math.floor(Date.now() / 1000); // Current time in seconds
-
-  //   if (currentTime > expires_at) {
-  //     // Token is expired, attempt to refresh
-  //     try {
-  //       const newSession = await refreshSession(refresh_token);
-  //       localStorage.setItem(
-  //         "sessionDetails",
-  //         JSON.stringify(newSession.data.session)
-  //       );
-  //       setIsAuthenticated(true);
-  //       setSessionDetails(newSession.data.session);
-  //       setUserDetails(newSession.data.user);
-  //     } catch (error) {
-  //       console.error("Failed to refresh session:", error);
-  //       logout(); // Log out user if refresh fails
-  //     }
-  //   } else {
-  //     // Token is still valid
-  //     setIsAuthenticated(true);
-  //     setUserDetails(storedUserDetails);
-  //     setSessionDetails(storedSessionDetails);
-  //   }
-  // };
-
-  // const refreshSession = async (refreshToken) => {
-  //   const { data, error } = await supabase.auth.api.refreshAccessToken(
-  //     refreshToken
-  //   );
-  //   if (error) throw error; // Handle error if refresh fails
-  //   return { data };
-  // };
-
-  // useEffect(() => {
-  //   restoreSession();
-  // }, []);
+  const [userData, setUserData] = useState();
 
   const login = (authObj) => {
     try {
@@ -87,6 +42,7 @@ const AuthContext = ({ children }) => {
     setIsAuthenticated(false);
     setSessionDetails();
     setUserDetails();
+    setUserData();
     // await signOutUser();
   };
 
@@ -149,9 +105,30 @@ const AuthContext = ({ children }) => {
     )
       refreshCurrentSession();
   }, [sessionDetails]);
+
+  useEffect(() => {
+    if (isAuthenticated && userDetails.id) {
+      async function getUserDataFromdb() {
+        console.log(userDetails);
+        const userRes = await getUserData("midyaiUsers", userDetails.id);
+        if (userRes.error) return;
+        console.log(userRes);
+        setUserData(userRes.data[0]);
+      }
+      getUserDataFromdb();
+    }
+  }, [userDetails, isAuthenticated]);
   return (
     <CreateContext.Provider
-      value={{ isAuthenticated, userDetails, login, sessionDetails, logout }}
+      value={{
+        isAuthenticated,
+        userDetails,
+        login,
+        sessionDetails,
+        logout,
+        userData,
+        setUserData,
+      }}
     >
       {children}
     </CreateContext.Provider>

@@ -1,14 +1,64 @@
 "use client";
 
-import React, { useState } from "react";
+import { useAuthContext } from "@/context/AuthContext";
+import { updateData } from "@/utilities/supabaseAuth";
+import React, { useState, useEffect } from "react";
 
 const ProfileBody = () => {
-  const [text, setText] = useState(
-    "My name is Fazlay Elahi Rafi and I'm a Front-End Developer, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."
-  );
+  const { userDetails, userData, isAuthenticated, setUserData } =
+    useAuthContext();
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [userName, setUserName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [text, setText] = useState("");
 
   const handleChange = (event) => {
     setText(event.target.value);
+  };
+  console.log(userData);
+
+  useEffect(() => {
+    if (isAuthenticated && userData) {
+      const {
+        displayName,
+        phoneNumber: phNo,
+        bio,
+        firstName: fn,
+        lastName: ln,
+      } = userData;
+      if (!fn || !ln) {
+        const temp = displayName.split(" ");
+        setFirstName(temp[0]);
+        if (temp.length > 1) {
+          setLastName(temp.at(-1));
+        }
+      } else {
+        setFirstName(fn);
+        setLastName(ln);
+      }
+
+      setUserName(displayName);
+      setPhoneNumber(phNo || "");
+      setText(bio);
+    }
+  }, [isAuthenticated, userData]);
+
+  const profileFormSubmit = async function (e) {
+    e.preventDefault();
+    if (!userName || !phoneNumber || !firstName) return;
+    const columnData = {
+      firstName,
+      lastName,
+      displayName: userName,
+      phoneNumber,
+      bio: text,
+    };
+    const res = await updateData("midyaiUsers", userData.id, columnData);
+    console.log(res);
+    if (!res.error) {
+      setUserData(res.data[0]);
+    }
   };
   return (
     <>
@@ -73,25 +123,42 @@ const ProfileBody = () => {
               aria-labelledby="profile-tab"
             >
               <form
-                action="#"
+                // action="#"
+                onSubmit={profileFormSubmit}
                 className="rbt-profile-row rbt-default-form row row--15"
               >
                 <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                   <div className="form-group">
                     <label htmlFor="firstname">First Name</label>
-                    <input id="firstname" type="text" defaultValue="Fazlay" />
+                    <input
+                      id="firstname"
+                      type="text"
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
+                    />
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                   <div className="form-group">
                     <label htmlFor="lastname">Last Name</label>
-                    <input id="lastname" type="text" defaultValue="Elahi" />
+                    <input
+                      id="lastname"
+                      type="text"
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
+                    />
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                   <div className="form-group">
                     <label htmlFor="username">User Name</label>
-                    <input id="username" type="text" defaultValue="Rafi" />
+                    <input
+                      id="username"
+                      type="text"
+                      placeholder="Rafi"
+                      value={userName}
+                      onChange={(e) => setUserName(e.target.value)}
+                    />
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-6 col-12">
@@ -100,7 +167,9 @@ const ProfileBody = () => {
                     <input
                       id="phonenumber"
                       type="tel"
-                      defaultValue="+1-202-555-0174"
+                      placeholder="+1-202-555-0174"
+                      value={phoneNumber}
+                      onChange={(e) => setPhoneNumber(e.target.value)}
                     />
                   </div>
                 </div>
@@ -118,9 +187,7 @@ const ProfileBody = () => {
                 </div>
                 <div className="col-12 mt--20">
                   <div className="form-group mb--0">
-                    <a className="btn-default" href="#">
-                      Update Info
-                    </a>
+                    <button className="btn-default">Update Info</button>
                   </div>
                 </div>
               </form>

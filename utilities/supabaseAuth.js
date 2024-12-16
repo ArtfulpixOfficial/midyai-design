@@ -38,6 +38,19 @@ export async function insertUserData(tableName, userData) {
     .insert([userData])
     .select();
 }
+
+export async function getUserData(table, id) {
+  let { data, error } = await supabase.from(table).select().eq("id", id);
+  return { data, error };
+}
+export async function updateData(table, id, column) {
+  const { data, error } = await supabase
+    .from(table)
+    .update(column)
+    .eq("id", id)
+    .select();
+  return { data, error };
+}
 export async function signOutUser() {
   const {
     data: { session },
