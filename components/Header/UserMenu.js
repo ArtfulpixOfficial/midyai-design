@@ -7,7 +7,7 @@ import { useAuthContext } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 import { signOutUser } from "@/utilities/supabaseAuth";
 const UserMenu = () => {
-  const { userDetails } = useAuthContext();
+  const { isAuthenticated, userData, userDetails } = useAuthContext();
   const router = useRouter();
   const onSignOut = async () => {
     console.log("hello from logout");
@@ -24,7 +24,8 @@ const UserMenu = () => {
             </div>
             <div className="admin-info">
               <span className="name">
-                {userDetails.user_metadata.displayName}
+                {(userData && userData.displayName) ||
+                  userDetails.user_metadata.displayName}
               </span>
               <Link
                 className="rbt-btn-link color-primary"

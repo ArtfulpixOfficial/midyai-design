@@ -10,6 +10,7 @@ import PricingData from "../../data/pricing.json";
 import bgShape from "../../public/images/bg/bg-shape-two.png";
 
 import Context from "@/context/Context";
+import { useAuthContext } from "@/context/AuthContext";
 import HeaderTop from "@/components/Header/HeaderTop/HeaderTop";
 import Header from "@/components/Header/Header";
 import PopupMobileMenu from "@/components/Header/PopUpMobileMenu";
@@ -23,11 +24,18 @@ import Compare from "@/components/Pricing/Compare";
 import TestimonialTwo from "@/components/Testimonials/TestimonialTwo";
 import AccordionItem from "@/components/Accordion/AccordionItem";
 import CtaTwo from "@/components/CallToActions/Cta-Two";
-
+import { useRouter } from "next/navigation";
 const PricingPage = () => {
   useEffect(() => {
     Sal();
   }, []);
+  const router = useRouter();
+  const { isAuthenticated, userDetails } = useAuthContext();
+  useEffect(() => {
+    if (!isAuthenticated || !userDetails) {
+      router.push("/signin");
+    }
+  }, [userDetails, isAuthenticated]);
 
   return (
     <>

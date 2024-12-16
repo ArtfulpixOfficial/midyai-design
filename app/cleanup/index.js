@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Context from "@/context/Context";
-
+import { useAuthContext } from "@/context/AuthContext";
 import PopupMobileMenu from "@/components/Header/PopUpMobileMenu";
 import BackToTop from "../backToTop";
 import LeftDashboardSidebar from "@/components/Header/LeftDashboardSidebar";
@@ -11,8 +11,15 @@ import RightDashboardSidebar from "@/components/Header/RightDashboardSidebar";
 import Modal from "@/components/Common/Modal";
 import StaticbarDashboard from "@/components/Common/StaticBarDashboard";
 import ImageGenerator from "@/components/ImageGenerator/ImageGenerator";
-
+import { useRouter } from "next/navigation";
 const CleanupPage = () => {
+  const router = useRouter();
+  const { isAuthenticated, userDetails } = useAuthContext();
+  useEffect(() => {
+    if (!isAuthenticated || !userDetails) {
+      router.push("/signin");
+    }
+  }, [userDetails, isAuthenticated]);
   return (
     <>
       <main className="page-wrapper rbt-dashboard-page">
@@ -24,18 +31,6 @@ const CleanupPage = () => {
             <Modal />
             <PopupMobileMenu />
 
-            {/* <div className="rbt-main-content">
-              <div className="rbt-daynamic-page-content">
-                <div className="rbt-dashboard-content">
-                  <div className="content-page">
-                    <div className="chat-box-section">
-                      <ImageGenerator />
-                      <StaticbarDashboard />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
             <div
               className="iframe-container mt--95"
               style={{

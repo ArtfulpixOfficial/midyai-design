@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Context from "@/context/Context";
-
+import { useAuthContext } from "@/context/AuthContext";
 import { useSearchParams } from "next/navigation";
 import PopupMobileMenu from "@/components/Header/PopUpMobileMenu";
 import BackToTop from "../backToTop";
@@ -13,11 +13,17 @@ import Modal from "@/components/Common/Modal";
 import StaticbarDashboard from "@/components/Common/StaticBarDashboard";
 import ImageGenerator from "@/components/ImageGenerator/ImageGenerator";
 import ChatAssistants from "@/components/ChatAssistants/ChatAssistants";
+import { useRouter } from "next/navigation";
 const ChatAssistantsPage = () => {
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
-
-  console.log(id);
+  const router = useRouter();
+  const { isAuthenticated, userDetails } = useAuthContext();
+  useEffect(() => {
+    if (!isAuthenticated || !userDetails) {
+      router.push("/signin");
+    }
+  }, [userDetails, isAuthenticated]);
   return (
     <>
       <main className="page-wrapper rbt-dashboard-page">

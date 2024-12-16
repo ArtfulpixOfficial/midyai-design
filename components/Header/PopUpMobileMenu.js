@@ -9,9 +9,11 @@ import logoLight from "../../public/images/logo/logo.png";
 
 import Nav from "./Nav";
 import SmallNav from "./SmallNav";
+import { useAuthContext } from "@/context/AuthContext";
 
 const PopupMobileMenu = () => {
   const { activeMobileMenu, setActiveMobileMenu } = useAppContext();
+  const { isAuthenticated, userDetails, userData } = useAuthContext();
 
   const handleResize = () => {
     if (window.innerWidth > 992) {
@@ -65,15 +67,13 @@ const PopupMobileMenu = () => {
               <SmallNav />
             </div>
           </div>
-          <div className="header-btn d-block d-md-none">
-            <Link
-              className="btn-default"
-              target="_blank"
-              href="/text-generator"
-            >
-              Get Started Free
-            </Link>
-          </div>
+          {!isAuthenticated && !userDetails && !userData && (
+            <div className="header-btn d-block d-md-none">
+              <Link className="btn-default" target="_blank" href="/signin">
+                Get Started Free
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </>

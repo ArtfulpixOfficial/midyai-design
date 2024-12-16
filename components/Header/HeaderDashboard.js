@@ -11,7 +11,7 @@ import Nav from "./Nav";
 import UserMenu from "./UserMenu";
 import { useAuthContext } from "@/context/AuthContext";
 const HeaderDashboard = ({ display }) => {
-  const { userDetails } = useAuthContext();
+  const { isAuthenticated, userDetails, userData } = useAuthContext();
   const {
     mobile,
     setMobile,
@@ -70,7 +70,7 @@ const HeaderDashboard = ({ display }) => {
                   </div>
                 </div>
 
-                {userDetails && (
+                {isAuthenticated && userDetails && (
                   <div className="rbt-admin-panel account-access rbt-user-wrapper right-align-dropdown">
                     <div className="rbt-admin-card grid-style">
                       <a className="d-flex align-items-center" href="#">
@@ -79,12 +79,17 @@ const HeaderDashboard = ({ display }) => {
                             <Image src={avatar} alt="Admin" />
                           </div>
                           <div className="content">
-                            {userDetails.user_metadata.displayName && (
-                              <span className="title ">
-                                {userDetails.user_metadata.displayName}
-                              </span>
-                            )}
-                            <p>{userDetails.email}</p>
+                            {(userData && userData.displayName) ||
+                              (userDetails.user_metadata.displayName && (
+                                <span className="title ">
+                                  {(userData && userData.displayName) ||
+                                    userDetails.user_metadata.displayName}
+                                </span>
+                              ))}
+                            <p>
+                              {(userData && userData.email) ||
+                                userDetails.email}
+                            </p>
                           </div>
                         </div>
                         <div className="icon">
