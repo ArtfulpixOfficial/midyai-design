@@ -69,7 +69,9 @@ export async function changePassword(newPassword) {
 }
 
 export async function forgotPassword(email) {
-  let { data, error } = await supabase.auth.resetPasswordForEmail(email);
+  let { data, error } = await supabase.auth.resetPasswordForEmail(email, {
+    redirectTo: "https://midyai-design.vercel.app/reset-password",
+  });
 
   return { data, error };
 }
