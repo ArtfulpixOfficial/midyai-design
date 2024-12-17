@@ -60,3 +60,16 @@ export async function signOutUser() {
     await supabase.auth.signOut();
   }
 }
+
+export async function changePassword(newPassword) {
+  const { data, error } = await supabase.auth.updateUser({
+    password: newPassword,
+  });
+  return { data, error };
+}
+
+export async function forgotPassword(email) {
+  let { data, error } = await supabase.auth.resetPasswordForEmail(email);
+
+  return { data, error };
+}

@@ -9,7 +9,11 @@ import brandImg from "../../public/images/brand/brand-t.png";
 import google from "../../public/images/sign-up/google.png";
 import facebook from "../../public/images/sign-up/facebook.png";
 import bgImg from "../../public/images/bg/signin-signup-background.png";
-import { getUserData, signInUser } from "@/utilities/supabaseAuth";
+import {
+  forgotPassword,
+  getUserData,
+  signInUser,
+} from "@/utilities/supabaseAuth";
 
 import { useAuthContext } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
@@ -26,11 +30,11 @@ const SigninPage = () => {
 
   const onSubmitSignIn = async (e) => {
     e.preventDefault();
+    console.log("submit");
     if (!email || !password) return;
     const res = await signInUser(email, password);
     console.log(res);
     if (res.error) return;
-
     login(res);
   };
   return (
@@ -94,9 +98,13 @@ const SigninPage = () => {
                           />
                         </div>
                         <div className="forget-text">
-                          <a className="btn-read-more" href="#">
+                          <Link
+                            className="btn-read-more"
+                            href="/forgot-password"
+                            // onClick={onForgotPassword}
+                          >
                             <span>Forgot password</span>
-                          </a>
+                          </Link>
                         </div>
                         <button type="submit" className="btn-default">
                           Sign In

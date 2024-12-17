@@ -1,7 +1,11 @@
 "use client";
 
 import { useAuthContext } from "@/context/AuthContext";
-import { updateData } from "@/utilities/supabaseAuth";
+import {
+  changePassword,
+  signInUser,
+  updateData,
+} from "@/utilities/supabaseAuth";
 import React, { useState, useEffect } from "react";
 
 const ProfileBody = () => {
@@ -12,7 +16,9 @@ const ProfileBody = () => {
   const [userName, setUserName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [text, setText] = useState("");
-
+  const [currentPassword, setCurrentPassword] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [retypeNewPassword, setRetypeNewPassword] = useState("");
   const handleChange = (event) => {
     setText(event.target.value);
   };
@@ -59,6 +65,24 @@ const ProfileBody = () => {
     if (!res.error) {
       setUserData(res.data[0]);
     }
+  };
+  const verifyCurrentPassword = async function (email, password) {
+    const res = await signInUser(email, password);
+    if (res.error) return false;
+    return true;
+  };
+  const passwordChangeFormSubmit = async function (e) {
+    e.preventDefault();
+    if (!currentPassword || !newPassword || !retypeNewPassword) return;
+    if (newPassword !== retypeNewPassword) return;
+    const isCurrentPasswordCorrect = await verifyCurrentPassword(
+      userData.email,
+      currentPassword
+    );
+    if (!isCurrentPasswordCorrect) return;
+    const { data, error } = await changePassword(newPassword);
+    console.log(data);
+    console.log(error);
   };
   return (
     <>
@@ -200,7 +224,8 @@ const ProfileBody = () => {
               aria-labelledby="password-tab"
             >
               <form
-                action="#"
+                // action="#"
+                onSubmit={passwordChangeFormSubmit}
                 className="rbt-profile-row rbt-default-form row row--15"
               >
                 <div className="col-12">
@@ -210,6 +235,8 @@ const ProfileBody = () => {
                       id="currentpassword"
                       type="password"
                       placeholder="Current Password"
+                      value={currentPassword}
+                      onChange={(e) => setCurrentPassword(e.target.value)}
                     />
                   </div>
                 </div>
@@ -220,6 +247,8 @@ const ProfileBody = () => {
                       id="newpassword"
                       type="password"
                       placeholder="New Password"
+                      value={newPassword}
+                      onChange={(e) => setNewPassword(e.target.value)}
                     />
                   </div>
                 </div>
@@ -232,14 +261,14 @@ const ProfileBody = () => {
                       id="retypenewpassword"
                       type="password"
                       placeholder="Re-type New Password"
+                      value={retypeNewPassword}
+                      onChange={(e) => setRetypeNewPassword(e.target.value)}
                     />
                   </div>
                 </div>
                 <div className="col-12 mt--20">
                   <div className="form-group mb--0">
-                    <a className="btn-default" href="#">
-                      Update Password
-                    </a>
+                    <button className="btn-default">Update Password</button>
                   </div>
                 </div>
               </form>
